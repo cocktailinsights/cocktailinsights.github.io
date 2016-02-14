@@ -4091,6 +4091,9 @@ h6
     .wrap-header-slider{
         height: 100vh !important;
     }
+    .wrap-header-slider:after{
+        height: 250px !important;
+    }
 
     .carousel-inner h2 {
         font-size: 30px !important;
