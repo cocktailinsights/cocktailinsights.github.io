@@ -4087,3 +4087,28 @@ h6
 
 }
 
+@media (max-width: 768px) {
+    .wrap-header-slider{
+        height: 100vh !important;
+    }
+
+    .carousel-inner h2 {
+        font-size: 30px !important;
+    }
+
+    .carousel-inner .large{
+        display:none;
+    }
+
+    .steps h2{
+        font-size: 30px !important;
+    }
+
+    .section-header h2{
+        font-size: 30px !important;
+    }
+
+    .section-header .large{
+        font-size: 15px !important;
+    }
+}
