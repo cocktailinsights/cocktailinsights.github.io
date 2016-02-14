@@ -4095,6 +4095,14 @@ h6
         height: 250px !important;
     }
 
+    .insight img{
+       content: url("../images/pictures/insight2.jpg") !important;
+    }
+
+    .dash img{
+        content: url("../images/pictures/dashboard2.jpg") !important;
+    }
+
     .carousel-inner h2 {
         font-size: 30px !important;
     }
