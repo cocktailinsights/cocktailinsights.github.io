@@ -16,9 +16,43 @@
     height: 80px;
     margin-bottom: 30px;
 }
+.ecommerce{
+    margin-top: 0px !important;
+    background-color: #01BDF2 !important;
+    height: 100vh;
+}
+
+.ecommerce .subhead{
+    color: white !important;
+}
+
+.ecommerce .feature{
+    color: white !important;
+    font-weight: normal;
+    font-size: 17px;
+}
+
+.ecommerce .desc{
+    color: white !important;
+    font-size: 17px;
+}
+
+.desc1{
+    color: #017FA2 !important;
+}
 
 .publish{
     width: 80px;
+}
+
+.e-list .icon-graph, .icon-speedometer{
+    font-size: 40px;
+    color: #017FA2;
+}
+
+.e-image{
+    width: 400px;
+    margin-right: 10px;
 }
 
 .chart{
@@ -37,7 +71,7 @@
 }
 
 .large{
-    font-weight: bold;
+    font-size: 23px !important;
 }
 
 
@@ -58,6 +92,13 @@
     color: #01BDF2 !important;
     font-size: 18px;
     margin-top: 0px;
+}
+
+.ecommerce article:after{
+    position: absolute;top: -110px !important;right: -185px !important;width: 200px !important;height: 100%;
+    -ms-transform: rotate(-7deg) !important; /* IE 9 */
+    -webkit-transform: rotate(-20deg) !important; /* Chrome, Safari, Opera */
+    transform: rotate(-20deg) !important;
 }
 
 a:hover,
@@ -4121,5 +4162,15 @@ h6
 
     .section-header .large{
         font-size: 15px !important;
+    }
+
+    .e-image{
+    width: 200px;
+    margin-right: 10px;
+    margin-top: -70px;
+    }
+
+    .ecommerce{
+        height: auto;
     }
 }
