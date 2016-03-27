@@ -39,6 +39,7 @@
 .ecommerce .desc{
     color: white !important;
     font-size: 17px;
+    font-weight: 600;
 }
 
 .desc1{
@@ -66,6 +67,10 @@
 .feature{
     color: #01627D !important; 
     font-weight: bold;
+}
+
+article .feature{
+    font-weight: 600 !important;
 }
 
 .fit{
