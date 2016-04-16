@@ -27,11 +27,10 @@ $(document).ready(function() {
             center: true,
             items:2,
             loop:true,
-            margin:10,
             autoplay: true,
             nav:true,
             dots:true,
-            margin: 70 
+            margin: 100 
         });
 
 
