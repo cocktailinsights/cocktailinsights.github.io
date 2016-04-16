@@ -187,5 +187,9 @@ a:hover {
 	.blog-img{
 		width: 200px;
 	}
+
+	#insights{
+		text-align: center !important;
+	}
 }
 
