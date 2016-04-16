@@ -1,0 +1,191 @@
+.btn-brand {
+	background-color: #01BDF2;
+	border-color: #01BDF2;
+	color: #FFFFFF;
+}
+
+.brand-color-text{
+	color: #01BDF2;
+}
+
+.call-to-action{
+	background-color: #ff8100;
+	border-color: #ff8100;
+	color: #FFFFFF !important;
+}
+
+.call-to-action:hover{
+	background-color: #FF9D39;
+	border-color: #FF9D39;
+	color: #FFFFFF !important;
+}
+
+.insights{
+	font-size: 25px;
+}
+
+.m-top{
+	margin-top: 20px;
+}
+
+.sm-top{
+	margin-bottom: 10px !important;
+}
+
+.line{
+	margin-top: 40px;
+}
+
+.f-icons{
+	color: #FF9D39;
+}
+
+.t-title{
+	font-size: 12px;
+	font-weight: 100;
+}
+
+.foot{
+	background-color: #01627D;
+}
+
+.social{
+	font-size: 30px;
+	margin-right: 5px;
+	color: white;
+}
+
+#twitter:hover{
+	color: #58ccff;
+}
+
+#fb:hover{
+	color: #58ccff;
+}
+
+#lkin:hover{
+	color: #58ccff;
+}
+
+.f-titles{
+	font-size: 20px;
+}
+
+.f-text{
+	font-size: 15px;
+	color: white !important;
+}
+
+.blue-text{
+	color: #8FDFF6 !important;
+}
+.white-text{
+	color: white;
+}
+
+.btn-newsletter{
+	background: #01627D;
+	border: 1px solid white !important;
+	color: white;
+	margin-left: 0px;
+}
+
+.btn-newsletter:hover{
+	background: #01BDF2;
+	border: none;
+	color: white;
+}
+
+.logo{
+	width: 60px;
+	background: white;
+	padding: 5px;
+	border-radius: 5px;
+	margin-right: 5px;
+}
+
+.logo1{
+	width: 30px;
+}
+
+.navbar-brand{
+	background: none !important;
+}
+
+.bg{
+	background: none !important;
+}
+
+.f-down{
+	margin-bottom: 20px;
+}
+
+.soon{
+	width: 220px;
+	margin-bottom: 5px;
+}
+
+.integrate{
+	margin-bottom: 5px;
+}
+
+.insights-img{
+	width: 430px;
+}
+
+#mc_embed_signup div.mce_inline_error{
+	background: none !important;
+	color: #FF6347 !important;
+}
+
+.header-img{
+	width: 600px !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	margin-top: 0px!important;
+
+}
+
+.blog-img{
+	width: 400px;
+	
+   -webkit-box-shadow: 0px 0px 8px 0px #000;
+}
+
+.blog-case{
+	height: 100%;
+}
+
+#blog-title{
+	margin-bottom: 10px;
+}
+
+.team-links{
+	color: #01BDF2;;
+}
+
+a {
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: #01BDF2;
+}
+a:hover {
+    color: #ff8100;
+}
+
+.padding{
+	padding: 10px !important;
+}
+
+
+@media (max-width: 760px){
+	.insights-img{
+		width: 330px !important;
+	}
+
+	.blog-img{
+		width: 200px;
+	}
+}
+

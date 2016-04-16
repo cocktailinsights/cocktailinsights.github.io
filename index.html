@@ -1,431 +1,490 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Cocktail - Social Media Insights & Publishing</title>
-    <meta name="description" content=" A social media analytics tool, helping eCommerce businesses and merchants measure their social media returns(ROI) whiles giving them insights on audience and content. Cocktail Insights helps businesses measure and maximise their social media returns">
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href="assets/images/favicon.ico" rel="icon"> -->
-    <link rel="stylesheet" type="text/css" href="assets/css/master.css">
-    <link rel="stylesheet" href="assets/style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Page title -->
+    <title>Cocktail Insights | An analytics platforms for measuring and maximizing Social Media ROI</title>
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!--<link rel="shortcut icon" type="image/ico" href="favicon.ico" />-->
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="vendor/metisMenu/dist/metisMenu.css" />
+    <link rel="stylesheet" href="vendor/animate.css/animate.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css" />
+
     
-    <!--[if lte IE 7]><script src="lte-ie7.js"></script><![endif]-->
-    <script type="text/javascript">
-        var _urq = _urq || [];
-        _urq.push(['initSite', 'b147e2c5-ac1e-457d-8c21-3086b8b53c37']);
-        (function() {
-            var ur = document.createElement('script'); ur.type = 'text/javascript'; ur.async = true;
-            ur.src = ('https:' == document.location.protocol ? 'https://cdn.userreport.com/userreport.js' : 'http://cdn.userreport.com/userreport.js');
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ur, s);
-        })();
-    </script>
-    <script src="//my.hellobar.com/a652cb68a21f25023a02cf32f07eefc83ddbb636.js" type="text/javascript" charset="utf-8" async="async"></script>
+    
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
+    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/helper.css" />
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mycss.css">
+
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.css"/>
+
 </head>
-<body id="home" data-offset="80" data-target=".navbar" data-spy="scroll">
-    <div id="page-preloader"><span class="spinner"></span></div>
-    <header class="header">
-        <section class="home-header dark wrap-header-slider">
-            <div id="home-carousel" class="home-slider carousel slide" data-ride="carousel" data-interval="8000">
+<body class="landing-page">
 
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="assets/images/pictures/Data-Scientists1.jpg" alt="" />
-                        <div class="carousel-caption">
-                            <div class="container-fluid wrap-contact-form blog ">
-                                <div class="row text-center">
-                                    <div class=" col-md-10 col-md-offset-1 col-sm-12 text-center wow fadeInUp" data-wow-duration="2s" >
-                                        <h2>Measure the ROI of your social media effort</h2>
-                                        <p class="large">Measure how much your business is gaining from your social media efforts</p>
-                                        <p id="alert-empty1" class="alerts"><i class="fa fa-exclamation-circle fa-lg"></i> Please enter your email address</p>
-                                        <p id="alert-valid1" class="alerts"><i class="fa fa-exclamation-circle fa-lg"></i> Please enter a valid email</p>
-                                        <p id="alert-thankyou1" class="thanks"><i class="fa fa-exclamation-circle fa-lg"></i> Your request has been submitted. Thank you</p>
-                                        
-                                    </div>
-                                </div>
-                                <div class="row wow fadeInUp" data-wow-duration="2s" >
-                                    <div class="col-md-8 col-md-offset-2 col-sm-10 ">
+    <!-- Simple splash screen-->
+    <div class="splash"> <div class="color-line"></div><div class="splash-title"><h1>Cocktail Insights</h1><p>Measure and maximise your social media ROI </p><div class="spinner"> <div class="rect1"></div> <div class="rect2"></div> <div class="rect3"></div> <div class="rect4"></div> <div class="rect5"></div> </div> </div> </div>
+<!--[if lt IE 7]>
+<p class="alert alert-danger">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
 
-                                        <div class="subscribe">
-                                            <form id="form1" name="myform1" class="form-inline clearfix"><input name="emailinput1" class="form-control pull-left" placeholder="Get invitation to use Cocktail"><button type="submit" class="btn call-action btn-round pull-right hidden-xs"><span><i class="fa fa-envelope fa-lg"></i></span> Subscribe</button><button type="submit" class="btn  call-action btn-round-small pull-right visible-xs-block"><i class="fa fa-check fa-lg"></i></button></form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand"><img class="logo1" src="images/cocktail.png"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a class="page-scroll" href="#page-top">Home</a></li>
+                <li><a class="page-scroll" page-scroll href="#insights">Insights</a></li>
+                <li><a class="page-scroll" page-scroll href="#features">Features</a></li>
+                <li><a class="page-scroll" page-scroll href="#signup">Sign up</a></li>
+                <!-- <li><a class="page-scroll" page-scroll href="#clients">Clients</a></li> -->
+                <!-- <li><a class="page-scroll" page-scroll href="#pricing">Pricing </a></li> -->
+                <li><a class="page-scroll" page-scroll href="#team">Team</a></li>
+                <li><a class="page-scroll" page-scroll href="#blogs">Blog</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header id="page-top">
+    <div class="container">
+        <div class="heading">
+            <h1>
+                Maximise the returns of your social media
+            </h1>
+            <span>Helping eCommerce businesses and merchants <br/> grow their business with social media</span>
+            <p class="small">
+               Social media marketing involves money and time. Get the most out of your social media efforts with Cocktail Insights. Measure and maximize your social media ROI.
+           </p>
+           <div class="shake">
+               <a href="#signup" class="page-scroll btn call-to-action btn-sm " onclick="this.blur();">Sign up for free beta</a>
+           </div>
+       </div>
+       <div class="heading-image animate-panel" data-child="item-animate" data-effect="fadeInRight">
+           <div class="row">
+               <div class="col-md-12">
+                   <!-- <p class="small">Measuring and maximizing Social Media ROI has never been this easy for eCommerce businesses & merchants</p> -->
+                   <img class="item-animate header-img" src="images/landing/laptop.png">
+               </div>
+
+           </div>
+
+       </div>
+   </div>
+</header>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class=" col-md-4 text-center">
+                <i class="fa fa-link brand-color-text icon-big"></i>
+                <h4>Easy Integrations</h4>
+                <p>Easily integrate your social media accounts and Google analytics</p>
+            </div>
+            <div class="col-md-4 text-center">
+             <i class="fa fa-arrows-alt brand-color-text icon-big"></i>
+             <h4>Publish</h4>
+             <p>Post and publish campaigns to all your social accounts from a single dashboard</p>
+         </div>
+         <div class=" col-md-4 text-center">
+             <i class="fa fa-bar-chart brand-color-text icon-big"></i>
+             <h4>Measure & Report</h4>
+             <p>Measure the impact and returns (ROI) of your social media marketing & efforts</p>
+         </div>
+     </div>
+ </div>
+</section>
+
+<section id="insights" class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="animated fadeInUp wow col-lg-12">
+                <h2><span class="brand-color-text">Insights </span>for your Social Media Marketing</h2>
+                <p>Know what you need to know to make your Social Media marketing a success</p>
+            </div>
+        </div>
+        <div class="row m-t-md">
+            <div class="animated fadeInUp wow  wow col-md-6">
+                <h4 class="m-t-xxxl">Target the right <span class="brand-color-text insights">Audience </span></h4>
+                <p>Analyse and know your audience. Target the right audience with your Social Media marketing and increase your conversions. Put your money where your audience are.</p>
+            </div>
+            <div class="animated fadeInUp wow  wow col-md-6">
+                <img class="insights-img" src="images/landing/audience.png" class="img-responsive">
+            </div>
+
+        </div>
+
+        <div class="row m-t-xl">
+            <div class="col-md-6 animated fadeInUp wow  wow">
+               <img class="insights-img" src="images/landing/content.png" class="img-responsive">
+           </div>
+           <div class="col-md-6 animated fadeInUp wow  wow">
+            <h4 class="m-t-xxl">Publish the right <span class="brand-color-text insights">Content </span></h4>
+            <p>Having difficulty determining the right content to increase enagement and conversions? Let Cocktail Insights tell you the right content that resonates with your audience. Increase engagement and conversions with the right content.</p>
+        </div>
+    </div>
+
+    <div class="row  m-t-xl">
+        <div class="col-md-6 animated fadeInUp wow  wow">
+            <h4 class="m-t-xxl ">Post at the right <span class="brand-color-text insights">Time</span></h4>
+            <p>Know when your fans are online and reach them. Know when your audience visit your website and post at the best time to increase traffic to your website.</p>
+        </div>
+        <div class="col-md-6 animated fadeInUp wow  wow">
+            <img class="insights-img" src="images/landing/time.png" class="img-responsive">
+        </div>
+    </div>
+    <div class="row m-t-xl">
+        <div class="col-md-6 animated fadeInUp wow  wow">
+         <img class="insights-img" src="images/landing/returns.png" class="img-responsive">
+     </div>
+     <div class="col-md-6 animated fadeInUp wow  wow">
+        <h4 class="m-t-xxl">Maximize your Social media <span class="brand-color-text insights">Returns (ROI)</span></h4>
+        <p>Not sure how much you are making from your Social Media efforts? Easily measure revenue, conversions and enagement generated by social media and maximize them using Cocktail Insights. With Cocktail Insights, you get to know the impact of Social Media on your business base line.</p>
+    </div>
+</div>
+
+</div>
+</section>
+
+<section id="features">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <h2><span class="brand-color-text">Features</span></h2>
+                <!-- <p>Lorem Ipsum available, but the majority have suffered alteration euismod. </p> -->
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-3">
+                <h4 class="m-t-lg"><i class="pe-7s-date f-icons icon-big"></i></h4>
+                <strong>Scheduling</strong>
+                <p>Easily schedule, queue and automate your posts</p>
+            </div>
+            <div class="col-md-3">
+                <h4 class="m-t-lg"><i class="pe-7s-speaker f-icons icon-big"></i></h4>
+                <strong>Ads automation</strong>
+                <p>Get data backed recommendations, optimize and automate your Ads</p>
+            </div>
+            <div class="col-md-3">
+                <h4 class="m-t-lg"><i class="pe-7s-users f-icons icon-big"></i></h4>
+                <strong>Team collaboration</strong>
+                <p>Add members of your team and work together in one place</p>
+            </div>
+            <div class="col-md-3">
+                <h4 class="m-t-lg"><i class="pe-7s-mail-open-file f-icons icon-big"></i></h4>
+                <strong>Reports</strong>
+                <p>Get weekly "fizz" of key metrics & social media insights</p>
+            </div>
+        </div>
+
+        <div class="line"> <hr></div>
+    </div>
+
+    <div class="container m-top">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6 col-md-offset-3">
+                    <h2><span class="brand-color-text">Integrations</span></h2>
+                    <p>
+                        We are working to bring in more integrations
+                    </p>
+                </div>
+            </div>
+
+            <div class="row text-center m-t-lg">
+                <div class="col-md-6">
+
+                    <div class="row">
+
+                        <div class="integrate col-md-6">
+                            <img src="images/integrations/f.png">
+                        </div>
+                        <div class="integrate col-md-6">
+                            <img src="images/integrations/gA.png">
+                        </div>
                     </div>
-                    <div class="item dash">
-                        <img class="fit" src="assets/images/pictures/dashboard1.jpg" alt="img"/>
-                        <div class="carousel-caption">
-                            <div class="container-fluid wrap-contact-form blog ">
-                                <div class="row text-center">
-                                    <div class=" col-md-10 col-md-offset-1 col-sm-12 text-center wow fadeInUp" data-wow-duration="2s" >
-                                        <h2>One dashboard to rule them all</h2>
-                                        <p class="large">Easily integrate multiple social media accounts and manage them from one dashboard.</p>
-                                        <p id="alert-empty2" class="alerts"><i class="fa fa-exclamation-circle fa-lg"></i> Please enter your email address</p>
-                                        <p id="alert-valid2" class="alerts" ><i class="fa fa-exclamation-circle fa-lg"></i> Please enter a valid email</p>
-                                        <p id="alert-thankyou2" class="thanks"><i class="fa fa-exclamation-circle fa-lg"></i> Your request has been submitted. Thank you</p>
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <img class="soon" src="images/integrations/t.png">
+                        </div>
+                        <div class="col-md-6">
+                            <img class="soon" src="images/integrations/s.png">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="soon" src="images/integrations/i.png">
+                        </div>
+                        <div class="col-md-6">
+                            <img class="soon" src="images/integrations/g.png">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="soon" src="images/integrations/p.png">
+                        </div>
+                        <div class="col-md-6">
+                            <img class="soon" src="images/integrations/in.png">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <section id="signup" class="bg-light">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-12">
+                    <h2>Request for an invitation to join our<span class="brand-color-text"> free beta </span></h2>
+                    <p>Join our beta testers and be part of the next big thing</p>
+                </div>
+            </div>
+
+            <div class="container">
+
+                <div class="row text-center m-t-lg">
+                    <div class="col-md-8 col-md-offset-2">
+                        <!-- Begin MailChimp Signup Form -->
+                        <div id="mc_embed_signup">
+                            <form action="//cocktailinsights.us13.list-manage.com/subscribe/post?u=73417957500a00eeeed9ac22e&amp;id=e75b766a34" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-horizontal" target="_blank" novalidate>
+                                <div id="mc_embed_signup_scroll">
+                                    <div class="form-group mc-field-group">
+
+                                        <input type="email" placeholder="Email"value="" name="EMAIL" class="form-control required email" id="mce-EMAIL">
                                     </div>
-                                </div>
-                                <div class="row wow fadeInUp" data-wow-duration="2s" >
-                                    <div class="col-md-8 col-md-offset-2 col-sm-10 ">
-                                        <div class="subscribe">
-                                            <form id="form2" name="myform2" class="form-inline clearfix" ><input name="emailinput2" class="form-control pull-left" placeholder="Get invitation to use cocktail"><button type="submit" class="btn call-action btn-round pull-right hidden-xs"><span><i class="fa fa-envelope fa-lg"></i></span> Subscribe</button><button type="submit" class="btn call-action btn-round-small pull-right visible-xs-block"><i class="fa fa-check fa-lg"></i></button></form>
-                                        </div>
+                                    <div class="form-group mc-field-group">
+
+                                        <input type="text" value="" placeholder="First name" name="FNAME" class="form-control required" id="mce-FNAME">
                                     </div>
+                                    <div id="mce-responses" class="clear">
+                                        <div class="response" id="mce-error-response" style="display:none"></div>
+                                        <div class="response" id="mce-success-response" style="display:none"></div>
+                                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_73417957500a00eeeed9ac22e_e75b766a34" tabindex="-1" value=""></div>
+                                    <div class="clear shake"><input type="submit" value="Request invite" name="subscribe" id="mc-embedded-subscribe" class="btn call-to-action"></div>
                                 </div>
-                            </div>
+                            </form>
                         </div>
 
+                        <!--End mc_embed_signup-->
+
                     </div>
-                    <div class="item insight">
-                        <img src="assets/images/pictures/insight.jpg" alt="" />
-                        <div class="carousel-caption">
-                            <div class="container-fluid wrap-contact-form blog ">
-                                <div class="row text-center">
-                                    <div class=" col-md-10 col-md-offset-1 col-sm-12 text-center wow fadeInUp" data-wow-duration="2s" >
-                                        <h2>Deeper insights, Greater results</h2>
-                                        <p class="large">Gain deeper social media insights through our data blending and correlation engine and maximize your business growth</p>
-                                        <p id="alert-empty3" class="alerts"><i class="fa fa-exclamation-circle fa-lg"></i> Please enter your email address</p>
-                                        <p id="alert-valid3" class="alerts" ><i class="fa fa-exclamation-circle fa-lg"></i> Please enter a valid email</p>
-                                        <p id="alert-thankyou3" class="thanks"><i class="fa fa-exclamation-circle fa-lg"></i> Your request has been submitted. Thank you</p>
-                                    </div>
-                                </div>
-                                <div class="row wow fadeInUp" data-wow-duration="2s" >
-                                    <div class="col-md-8 col-md-offset-2 col-sm-10 ">
-                                        <div class="subscribe">
-                                            <form id="form3" name="myform3" class="form-inline clearfix"><input name="emailinput3" class="form-control pull-left" placeholder="Get invitation to use cocktail"><button type="submit" class="btn call-action btn-round pull-right hidden-xs"><span><i class="fa fa-envelope fa-lg"></i></span> Subscribe</button><button type="submit" class="btn call-action btn-round-small pull-right visible-xs-block"><i class="fa fa-check fa-lg"></i></button></form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
-                    </div>
+
 
                 </div>
 
-                <!-- Controls -->
-                <a class="left carousel-control" href="home-2.html#home-carousel" data-slide="prev">
-                    <i class="fa fa-angle-left"></i>
-                </a>
-                <a class="right carousel-control" href="home-2.html#home-carousel" data-slide="next">
-                    <i class="fa fa-angle-right"></i>
-                </a>
-            </div>
 
-        </section>
-        <section class="steps" id="section-steps">
-            <a class="striped-icon divider scroll" href="index.html#section-steps"><i class="fa fa-chevron-down"></i></a>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <header class="section-header wow fadeInUp" data-wow-duration="2">
-                            <p class="subhead">Quick results in</p>
-                            <h2>Three Simple Steps</h2>
-                            <p class="large"></p>
-                        </header>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 wow fadeInUp " data-wow-duration="2s">
-                        <article>
-                            <div class="striped-icon-small" >1</div>
-                            <div class=" icon_link"></div>
-                            <h5>Easy Integrations</h5>
-                            <p>Easily integrate your social media accounts and Google analytics</p>
-                        </article>
-                    </div>
-                    <div class="col-md-4 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">
-                        <article>
-                            <div class="striped-icon-small">2</div>
-                            <img class="publish" src="assets/images/icons/publish.svg" alt="icon" />
-                            <h5>Publish</h5>
-                            <p>Post and publish campaigns to all your social accounts from a single dashboard</p>
-                        </article>
-                    </div>
-                    <div class="col-md-4 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.6s">
-                        <article>
-                            <div class="striped-icon-small">3</div>
-                            <img class="publish" src="assets/images/icons/chart59.svg" alt="icon" />
-                            <h5>Measure & Report</h5>
-                            <p>Measure the impact and ROI of your social media efforts</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section class="features dark parallax-section-2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="2s">
-                        <article>
-                            <span aria-hidden="true" class="icon-graph"></span>
-                            <h5>Analytics</h5>
-                            <p class="feature">Gain insights from social data and discover trends</p>
-                        </article>
-                    </div>
-                    <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="2s">
-                        <article>
-                            <span aria-hidden="true" class="icon-pie-chart" ></span>
-                            <h5>ROI</h5>
-                            <p class="feature">Measure the ROI of your social media efforts</p>
-                        </article>
-                    </div>
-                    <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="2s">
-                        <article>
-                            <span aria-hidden="true" class="icon-calendar"></span>
-                            <h5>Scheduling</h5>
-                            <p class="feature">Schedule post and ad campaigns</p>
-                        </article>
-                    </div>
-                    <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">
-                        <article>
-                            <span aria-hidden="true" class="icon-users"></span>
-                            <h5>Team Collaboration</h5>
-                            <p class="feature">Add members of your team and work together in one place</p>
-                        </article>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">
-                        <article>
-                            <span aria-hidden="true" class="icon-envelope-open"></span>
-                            <h5>Email reports</h5>
-                            <p class="feature">Get daily "fizz" of key metrics, insights & social media notifications</p>
-                        </article>
-                    </div>
-                    <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="2s">
-                        <article>
-                            <span aria-hidden="true" class="icon-speech"></span>
-                            <h5>Data backed suggestions</h5>
-                            <p class="feature">Get data backed suggestions and make informed decisions</p>
-                        </article>
-                    </div>
-                    <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="2s">
-                        <article>
-                            <span aria-hidden="true" class="icon-size-fullscreen"></span>
-                            <h5>Manage social accounts</h5>
-                            <p class="feature">Post and publish campaigns from one dashboard</p>
-                        </article>
-                    </div>
-                    <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">
-                        <article>
-                            <span aria-hidden="true" class="icon-layers"></span>
-                            <h5>Easy integrations</h5>
-                            <p class="feature">Integrate Google analytics & other tracking tools to gain deeper insights</p>
-                        </article>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <section class="analytics" id="services">
-        <a class="striped-icon divider scroll" href="index.html#services"><i class="fa fa-chevron-down"></i></a>
+    <section id="team">
         <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <header class="section-header wow fadeInUp" data-wow-duration="2s">
-                        <p class="subhead">Gain Insights From</p>
-                        <h2>Detailed Analytics</h2>
-                        <p class="large">Gather analytics from your various social platforms and other tracking tools</p>
-                    </header>
+            <div class="row text-center">
+                <div class="col-md-6 col-md-offset-3">
+                    <h2><span class="brand-color-text">Team </span></h2>
+                    <p>
+                        Our aweosme team
+                    </p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6 wow fadeInUp" data-wow-duration="2s">
-                    <div id="accordion-one" role="tablist" aria-multiselectable="true">
-                        <div class="panel panel-default panel-alt-two" >
-                            <div class="panel-heading active" role="tab" id="headingOne">
-                                <h5 class="panel-title"><a data-toggle="collapse" data-parent="#accordion-one" href="index.html#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span class="accordion-icon"><span class="stacked-icon"><i class="fa fa-usd"></i></span></span>Know Your Return on Investment (ROI)</a></h5>
-                            </div>
-                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                <div class="panel-body">About 56% of businesses and brands are unable to tie social media to business outcomes and sales. We enable you know how much you are putting in your social media efforts and how much your business is gaining from it. We help you identify and know what works so that you can increase your ROI</div>
-                            </div>
-                            <div class="panel-heading" role="tab" id="headingTwo">
-                                <h5 class="panel-title"><a class="collapsed" data-toggle="collapse" data-parent="#accordion-one" href="index.html#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><span class="accordion-icon"><span class="stacked-icon"><i class="fa fa-rocket"></i></span></span>
-                                    Plan & launch data backed campaigns</a></h5>
-                                </div>
-                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                    <div class="panel-body">
-                                        Avoid doing social media campaigns blindly. Let our deep analytics and insights guide you into choosing the right content and best performing channels. Maximise your returns</div>
-                                    </div>
-                                    <div class="panel-heading" role="tab" id="headingThree">
-                                        <h5 class="panel-title"><a class="collapsed" data-toggle="collapse" data-parent="#accordion-one" href="index.html#collapseThree" aria-expanded="false" aria-controls="collapseTwo">Multiple account integration<span class="accordion-icon"><span class="stacked-icon"><i class="fa fa-sitemap"></i></span></span></a></h5>
-                                    </div>
-                                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                        <div class="panel-body">Manage multiple social accounts from one dashboard. Cocktail makes your social media work easy and we promise, you will <span><i class="fa fa-heart"></i></span> it</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div id="graph-line"></div>
-                        </div>
+
+            <div class="row m-t-lg text-center">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="images/ben.png" class="img-circle" alt="">
+                        <h4><span>Ben - CEO</span><p class="t-title">Co-founder</p></h4>
+                        <p>Ben is an optimistic person with a desire for continuous self development. He is an ardent leader who believes in team work and he loves to sell.</p>
+
                     </div>
                 </div>
-            </section>
-            <section class="steps ecommerce" id="section-steps">
-                <div class="container" >
-                    <div class="row" style="margin-top:-80px;">
-                        <div class="col-md-8 col-md-offset-2" >
-                            <header class="section-header wow fadeInUp" data-wow-duration="2">
-                                <p class="subhead">Built with ecommerce in mind</p>
-                                <h2>Optimized for ecommerce businesses</h2>
-                                <p class="large"></p>
-                            </header>
-                        </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="images/sam.JPG" class="img-circle" alt="">
+                        <h4><span>Sam - CTO</span><p class="t-title">Co-founder</p></h4>
+                        <p>Samuel is meticulous with each line of code. He is enthusiastic about new technologies and he has a thing meteorJS</p>
+
                     </div>
-                    <div class="row">
-                        <div class="col-md-4 wow fadeInUp " data-wow-duration="2s">
-                            <article>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="images/a3.jpg" class="img-circle img-small" alt="">
+                        <h4><span>Panin - CMO</span><p class="t-title">Co-founder</p></h4>
+                        <p>Panin is a marketing genius, he makes sure that every penny spent in a marketing campaign is worth it and he likes using Cocktail Insights.</p>
 
-                                <img class="e-image" src="assets/images/ecommerce2.png">
-
-                            </article>
-                        </div>
-                        <div class="col-md-1 wow fadeInUp " data-wow-duration="2s">
-                            <article>
-
-                            </article>
-                        </div>
-                        <div class="col-md-7 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">
-                            <article>
-                                <h5 class="desc1">Helping Ecommerce businesses and merchants maximise revenue from social media</h5>
-                                <p class="desc">Cocktail Insights is built to fullfill the social media needs of every eCommerce business and merchant. We know the role that social media plays in eCommerce and we want to help you turn social media into a revenue generation monster </p>
-                            </article>
-                            <div class="row">
-                             <div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">
-                                <article>
-                                    <span aria-hidden="true" class="icon-speedometer"></span>
-                                    <!-- <h5>Determine best performing social channels</h5> -->
-                                    <p class="feature">Determine best performing social channels to increase revenue</p>
-                                </article>
-                            </div>
-                            <div class="row">
-                             <div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">
-                                <article class="e-list">
-                                    <span aria-hidden="true" class="icon-graph" ></span>
-                                    <!-- <h5>Determine best performing social channels</h5> -->
-                                    <p class="feature">Measure the ROI, conversion & revenue generated by campaigns and posts</p>
-                                </article>
-                            </div>
-
-                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+            <div class="row m-t-lg text-center">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="images/alex.jpg" class="img-circle" alt="">
+                        <h4><span>Alex Burkhead - Advisor</span></h4>
+                        <p>Alex is a wonderful mentor. With his experience as a Digital Analyst at <a class="team-links" href="http://www.edelman.com/" target="blank">Edelman</a> he adds a lot of value to the team by providing advice</p>
 
-        <section class="blog" id="blog">
-            <a class="striped-icon divider scroll" href="index.html#blog"><i class="fa fa-chevron-down"></i></a>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <header class="section-header wow fadeInUp" data-wow-duration="2s">
-                            <p class="subhead">Be part of the next big thing</p>
-                            <h2>Get an invitation to use Cocktail</h2>
-                            <p id="alert-empty" class="alerts"><i class="fa fa-exclamation-circle fa-lg"></i> Please enter your email address</p>
-                            <p id="alert-valid" class="alerts"><i class="fa fa-exclamation-circle fa-lg"></i> Please enter a valid email</p>
-                            <p id="alert-thankyou" class="thanks"><i class="fa fa-exclamation-circle fa-lg"></i> Your request has been submitted. Thank you</p>
-                            <!-- <p class="large">Sed condimentum ante ac quam varius pretium. Nunc ornare laoreet augue et elementum. Phasellus libero, blandit vel sapien vitae, condimentum ultricies magna et.</p> -->
-                        </header>
                     </div>
                 </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="images/jorn.jpg" class="img-circle" alt="">
+                        <h4><span>Jorn Lyseggen - Advisor</span></h4>
+                        <p>Being the CEO & founder of the worlds leading Social listening platform, <a class="team-links" href="http://meltwater.com/" target="blank">Meltwater</a>. Jorn Lyseggen is a must have advisor to our team</p>
 
-                <div class="row wow fadeInUp" data-wow-duration="2s">
-                    <div id="email2" class="col-md-6 col-md-offset-3">
-                        <div class="subscribe">
-                            <form id="form" class="form-inline clearfix" name="myform"><input name="emailinput"  class="form-control pull-left" placeholder="Enter email" name="email2"><button type="submit" class="btn call-action btn-round pull-right hidden-xs">Subscribe</button><button type="submit" class=" btn call-action btn-round-small pull-right visible-xs-block"><i class="fa fa-check fa-lg"></i></button></form>
-                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="images/mest.png" class="img-circle img-small" alt="">
+                        <h4><span>MEST - Investors</span></h4>
+                        <p>The Meltwater Entrepreneurial School of Technology trains and invest in African entrepreneurs. <a class="team-links" href="http://meltwater.org/" target="blank">MEST</a> helps them develop globally relevant businesses</p>
+
                     </div>
                 </div>
             </div>
-        </section>
 
-        <footer class="home-footer dark-map" id="contact">
-            <div class="container">
-                <ul class="nav nav-tabs-alt nav-tabs-two nav-tab-inverse" role="tablist">
-                    <li role="presentation" class="active"><a href="index.html#contact-info" aria-controls="contact-info" role="tab" data-toggle="tab">Contact info</a></li>
+        </div>
+    </section>
+    <section id="blogs" class="bg-light">
+        <div id="blog-title" class="row text-center">
+            <div class="col-md-6 col-md-offset-3">
+                <h2><span class="brand-color-text">Blogs</span></h2>
+                <p>
+                    Check out what we have written so far
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+            <div class="blog-case owl-theme owl-carousel">
+                  <div class="blog-img"><a target="blank" href="http://blog.cocktailinsights.com/2016/02/03/social-media-and-ecommerce/"><img src="images/landing/blog1.png" class="" alt=""></a></div>
+                  <div class="blog-img"><a target="blank" href="http://blog.cocktailinsights.com/2016/04/08/Growing-our-betalist-with-BetaList/"><img src="images/landing/blog2.png" class="" alt=""></a></div>
+              </div>
+          </div>
+      </div>
 
-                </ul>
-                <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane active" id="contact-info">
-                        <div class="row">
-                            <div class="col-md-8 col-md-offset-2">
-                                <div class="footer-header">
-                                    <h2>Contact info</h2>
-                                    <p class="large">Lets hear from you...</p>
-                                </div>
-                            </div>
+  </section>
+
+
+  <section id="contact" class=" foot bg-light">
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-6">
+                <h2><img class="logo" src="images/cocktail.png"><span class="text-success blue-text">Cocktail Insights</span></h2>
+            </div>
+        </div>
+
+        <div class="row m-t-lg">
+
+            <div class="col-md-4 f-down">
+                <p class="f-titles blue-text ">Follow Us</p>
+                <a href=""><i id="twitter" class="social fa fa-twitter-square"></i></a>
+                <a href=""><i id="fb" class="social fa fa-facebook-square"></i></a>
+                <a href=""><i id="lkin" class="social fa fa-linkedin-square"></i></a>
+            </div>
+            <div class="col-md-4 f-down">
+                <p class="f-titles blue-text">Other links</p>
+                <strong><a class="f-text f-down" target="blank" href="http://blog.cocktailinsights.com/">Blog</a></strong>
+
+                <p class="f-titles blue-text">Contact Us</p>
+                <strong class="f-text">support@cocktailinsights.com</strong>
+            </div>
+            <div class="col-md-3 text-left">
+                <!-- Begin MailChimp Signup Form -->
+
+                <div id="mc_embed_signup" class="bg">
+                    <form action="//cocktailinsights.us13.list-manage.com/subscribe/post?u=73417957500a00eeeed9ac22e&amp;id=d572aeae8a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-horizontal" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll" class="form-group">
+                            <label class=" f-titles blue-text control-label sm-top" for="mce-EMAIL">Subscribe to our mailing list</label>
+                            <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_73417957500a00eeeed9ac22e_d572aeae8a" tabindex="-1" value=""></div>
+                            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn m-top btn-newsletter"></div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <article class="contact-item">
-                                    <div class="dotted-line hidden-sm hidden-xs"></div>
-
-                                </article>
-                            </div>
-                            <div class="col-md-4">
-                                <article class="contact-item">
-                                    <div class="dotted-line hidden-sm hidden-xs"></div>
-
-                                    <div class="striped-icon-xlarge"><span aria-hidden="true" class="icon-envelope"></span></div>
-                                    <h5>E-mail</h5>
-                                    <p>team@cocktailinsights.com</p>
-                                </article>
-                            </div>
-                            <div class="col-md-4">
-                                <article class="contact-item">
-
-                                </article>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div role="tabpanel" class="tab-pane" id="on-map">
-                        <div id="mapCanvas"></div>
-
-                        <div class="copyright-alt">
-                            <ul class="copyright-links list-inline">
-                                <li><a href="https://www.facebook.com/cocktailinsights/"><i class="fa fa-facebook fa-lg"></i></a></li>
-                                <li><a href="https://twitter.com/cocktailinsight"><i class="fa fa-twitter fa-lg"></i></a></li>
-                            </ul>
-                            <p>&copy; 2016 – All Rights Reserved</p>
-                        </div>
-                    </div>
+                    </form>
                 </div>
-            </footer>
 
-            <script src="assets/js/jquery-1.11.1.min.js"></script><script src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"></script><script src="assets/js/bootstrap.min.js"></script><script src="assets/js/jquery.mb.YTPlayer.js"></script><script src="assets/js/isotope.pkgd.min.js"></script><script src="assets/js/owl.carousel.min.js"></script><script src="assets/js/jquery.scrollTo.min.js"></script><script src="assets/js/jquery.ui.effect.min.js"></script><script src="assets/js/modernizr.js"></script><script src="assets/js/jquery.waypoints.min.js"></script><script src="assets/js/fancybox/jquery.fancybox.js"></script><script src="assets/js/wow.min.js"></script><script>new WOW().init();
-            (function($) {
-            })(jQuery);</script><script>new WOW().init();</script><!-- <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script> --><script src="assets/js/map.js"></script><script src="assets/js/jquery.easypiechart.min.js"></script><script src="assets/js/TweenMax.min.js"></script><script src="assets/js/highcharts.js"></script><script src="assets/js/Chart.min.js"></script>
-            <script src="assets/js/custom.js"></script>
-            <script>
-              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+                <!--End mc_embed_signup-->
+            </div>
+        </div>
+    </div>
+</section>
 
-              ga('create', 'UA-73940435-3', 'auto');
-              ga('send', 'pageview');
+<!-- Vendor scripts -->
+<script src="vendor/jquery/dist/jquery.min.js"></script>
+<script src="vendor/jquery-ui/jquery-ui.min.js"></script>
+<script src="vendor/slimScroll/jquery.slimscroll.min.js"></script>
+<script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="vendor/metisMenu/dist/metisMenu.min.js"></script>
+<script src="vendor/iCheck/icheck.min.js"></script>
+<script src="vendor/sparkline/index.js"></script>
 
-          </script>
-          <!--Start of Tawk.to Script-->
-          <script type="text/javascript">
-            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-            (function(){
-                var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-                s1.async=true;
-                s1.src='https://embed.tawk.to/57055a70e550783e6825518d/default';
-                s1.charset='UTF-8';
-                s1.setAttribute('crossorigin','*');
-                s0.parentNode.insertBefore(s1,s0);
-            })();
-        </script>
-        <!--End of Tawk.to Script-->    
-    </body>
-    </html>
+<!-- App scripts -->
+<script src="scripts/homer.js"></script>
+<script src="scripts/myjs.js"></script>
+
+<!-- Local script for menu handle -->
+<!-- It can be also directive -->
+<script>
+    $(document).ready(function () {
+
+        // Page scrolling feature
+        $('a.page-scroll').bind('click', function(event) {
+            var link = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $(link.attr('href')).offset().top - 50
+            }, 500);
+            event.preventDefault();
+        });
+
+        $('body').scrollspy({
+            target: '.navbar-fixed-top',
+            offset: 80
+        });
+
+    });
+</script>
+<!--wow.js-->
+<script src="scripts/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
+
+<!--mail-chimp-->
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
+<!-- Owl carousel -->
+<script src="owlcarousel/owl.carousel.min.js"></script>
+
+</body>
+</html>
