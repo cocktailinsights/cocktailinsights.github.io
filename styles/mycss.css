@@ -100,12 +100,12 @@
 	width: 60px;
 	background: white;
 	padding: 5px;
-	border-radius: 5px;
+	border-radius: 3px;
 	margin-right: 5px;
 }
 
 .logo1{
-	width: 30px;
+	width: 150px;
 }
 
 .navbar-brand{
@@ -121,11 +121,11 @@
 }
 
 .soon{
-	width: 220px;
 	margin-bottom: 5px;
 }
 
 .integrate{
+	margin-top: 16px;
 	margin-bottom: 5px;
 }
 
@@ -186,6 +186,10 @@ a:hover {
 
 	.blog-img{
 		width: 200px;
+	}
+
+	.soon{
+		margin-left: 13px !important;
 	}
 
 	#insights{
