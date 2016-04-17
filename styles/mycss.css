@@ -184,6 +184,14 @@ a:hover {
 	padding: 10px !important;
 }
 
+.ui-effects-wrapper {    
+    display: inline-block;
+}
+
+.shake{
+	display: inline-block;
+}
+
 
 @media (max-width: 760px){
 	.insights-img{
