@@ -74,6 +74,7 @@
 .f-text{
 	font-size: 15px;
 	color: white !important;
+	margin-bottom: 10px !important;
 }
 
 .blue-text{
@@ -121,12 +122,17 @@
 }
 
 .soon{
-	margin-bottom: 5px;
+	margin-bottom: 10px;
+	width: 281px;
 }
 
 .integrate{
 	margin-top: 16px;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
+}
+
+.integrate-img{
+	width: 270px;
 }
 
 .insights-img{
@@ -190,6 +196,7 @@ a:hover {
 
 	.soon{
 		margin-left: 13px !important;
+		width: 286px !important;
 	}
 
 	#insights{
