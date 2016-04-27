@@ -9,9 +9,11 @@
 }
 
 .call-to-action{
+	width: 100px;
 	background-color: #ff8100;
 	border-color: #ff8100;
 	color: #FFFFFF !important;
+	font-size: 12px;
 }
 
 .call-to-action:hover{
@@ -107,6 +109,7 @@
 
 .logo1{
 	width: 150px;
+	margin-right: 10px;
 }
 
 .navbar-brand{
@@ -194,6 +197,11 @@ a:hover {
 
 .shake{
 	display: inline-block;
+}
+
+.beta{
+	color:#ff8100 !important;
+	font-size: 13px;
 }
 
 
