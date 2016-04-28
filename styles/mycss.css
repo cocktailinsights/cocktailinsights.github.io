@@ -204,6 +204,14 @@ a:hover {
 	font-size: 13px;
 }
 
+#sub-head{
+	font-size: 17px !important;
+}
+
+.small{
+	font-size: 13px !important;
+}
+
 
 @media (max-width: 760px){
 	.insights-img{
