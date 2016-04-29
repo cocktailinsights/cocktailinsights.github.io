@@ -9,11 +9,12 @@
 }
 
 .call-to-action{
-	width: 100px;
+	width: 130px;
 	background-color: #ff8100;
 	border-color: #ff8100;
 	color: #FFFFFF !important;
 	font-size: 12px;
+	font-weight: bold;
 }
 
 .call-to-action:hover{
