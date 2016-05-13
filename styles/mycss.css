@@ -9,7 +9,7 @@
 }
 
 .call-to-action{
-	width: 230px;
+	width: 230px !important;
 	background-color: #ff8100;
 	border-color: #ff8100;
 	color: #FFFFFF !important;
