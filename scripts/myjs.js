@@ -4,7 +4,6 @@ $(document).ready(function() {
 	var interval_delay = 500;
 		var is_interval_running = false; //Optional
 		interval_function = function () {
-			console.log("first run")
 			is_interval_running = true;
 	     	//button shake
 	     	$( ".shake" ).effect( "shake" );
