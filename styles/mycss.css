@@ -225,6 +225,19 @@ a:hover {
 		width: 200px;
 	}
 
+	#sub-head{
+		font-size: 13px !important;
+
+	}
+
+	.call-to-action{
+		margin-top: 20px;
+	}
+
+	.small{
+		display: none;
+	}
+
 	.soon{
 		margin-left: 13px !important;
 		width: 286px !important;
