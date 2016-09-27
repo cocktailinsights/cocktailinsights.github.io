@@ -1784,7 +1784,7 @@ body {
   border-top: 2px solid #62cb31;
 }
 .hpanel.hblue .panel-body {
-  border-top: 2px solid #3498db;
+  border-top: 2px solid #01BDF2;
 }
 .hpanel.hyellow .panel-body {
   border-top: 2px solid #ffb606;
@@ -3493,10 +3493,11 @@ ul.h-list li:hover a {
 }
 .landing-page .navbar-default {
   background: #fff;
+  border-color: #fff !important;
 }
 .landing-page .navbar .navbar-brand {
   font-size: 12px;
-  height: auto; 
+  height: auto;
   margin-top: 8px;
   padding: 9px 15px;
   font-weight: 700;
@@ -3576,7 +3577,7 @@ ul.h-list li:hover a {
   font-weight: 600;
 }
 .landing-page p {
-  color: #a7afb8;
+  color: #9a9c9e;
 }
 .landing-page .heading span {
   font-size: 13px;

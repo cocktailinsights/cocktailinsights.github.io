@@ -1,3 +1,163 @@
+/*header*/
+.heading{
+	margin-top: 150px !important;
+}
+
+/*what is cocktail insights*/
+#whatIs {
+	margin-bottom: 50px;
+}
+
+.desc {
+	font-size: 16px;
+}
+#integrations {
+	width: 155px;
+}
+
+#track {
+	width: 120px;
+}
+
+#ad {
+	width: 170px;
+}
+
+/***pricing***/
+#pricing-header{
+	margin-top: 30px;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+/*slider*/
+#pricing {
+
+}
+
+#slider-holder {
+	margin-top: 80px;
+}
+
+#slider-value {
+	font-size: 30px;
+	font-weight: bold;
+	color: #02627D;
+}
+
+#per {
+	font-size: 20px;
+	color: #01BDF2;
+}
+
+#estimate {
+	font-size: 30px;
+	font-weight: bold;
+	color: #02627D;
+}
+
+#slider {
+	margin-top:30px;
+}
+
+.margin-top-20 {
+	margin-top: 20px;
+}
+
+#price-table-head{
+	background: #02627D;
+	font-size: 15px;
+	color: white;
+}
+
+#prices {
+	margin-top: 15px;
+}
+
+.price-item {
+	font-size: 16px;
+}
+
+#cost-table-head {
+	background: #02627D;
+	font-size: 15px;
+	color: white;
+}
+
+#price-desc {
+	margin-top: 90px;
+}
+
+#price-desc .text {
+	font-size:17px;
+}
+
+#price-table {
+	margin-top:30px;
+}
+
+.pricing-table {
+	width: 400px;
+	text-align: center;
+	margin-left:auto;
+  margin-right:auto;
+
+}
+
+.pricing-table th {
+	background: #02627D;
+	font-size: 17px;
+	padding: 6px 13px 7px;
+	color: white;
+	text-align: center;
+}
+.pricing-table{
+	border-collapse: separate;
+	border-spacing: 5px;
+}
+
+.pricing-table td {
+	padding: 6px 13px 7px;
+	font-size: 17px;
+}
+
+.perk-item {
+	font-size: 17px;
+}
+
+.perk-desc {
+	font-size: 15px;
+	color: ;
+}
+
+.perks {
+	margin-top: 50px;
+}
+
+#support {
+	width: 80px;
+}
+
+#manager {
+	width: 90px;
+}
+
+#books {
+	width: 90px;
+}
+
+#ad-service {
+	width: 110px;
+}
+
+#resources {
+	margin-top: 50px;
+}
+/*end of pricing*/
+
+
 .btn-brand {
 	background-color: #01BDF2;
 	border-color: #01BDF2;
@@ -18,12 +178,26 @@
 	height: 40px !important;
 }
 
+.call-to-action2{
+	width: 230px !important;
+	background-color: #01BDF2;
+	border-color: #01BDF2;
+	color: #FFFFFF !important;
+	font-size: 14px;
+	font-weight: bold;
+	height: 40px !important;
+}
+
 .call-to-action:hover{
 	background-color: #FF9D39;
 	border-color: #FF9D39;
 	color: #FFFFFF !important;
 }
 
+#pricing{
+	background-color: #fff;
+
+}
 .insights{
 	font-size: 25px;
 }
@@ -159,13 +333,18 @@
 
 
 .blog-img{
-	width: 400px;
-	
-   -webkit-box-shadow: 0px 0px 8px 0px #000;
+	margin: 3px;
+   -webkit-box-shadow: 0px 0px 2px 0px #6a6c6f;
+}
+
+#owl .blog-img img{
+	display: block;
+    width: 100%;
+    height: auto;
 }
 
 .blog-case{
-	height: 100%;
+
 }
 
 #blog-title{
@@ -183,14 +362,14 @@ a:link, a:visited {
     color: #01BDF2;
 }
 a:hover {
-    color: #ff8100;
+    color: #02627D;
 }
 
 .padding{
 	padding: 10px !important;
 }
 
-.ui-effects-wrapper {    
+.ui-effects-wrapper {
     display: inline-block;
 }
 
@@ -200,6 +379,7 @@ a:hover {
 
 .shake{
 	display: inline-block;
+	margin-top: 12px !important;
 }
 
 .beta{
@@ -208,17 +388,96 @@ a:hover {
 }
 
 #sub-head{
-	font-size: 17px !important;
+	font-size: 19px !important;
+	margin-top: 20px !important;
+	color: white !important;
 }
 
 .small{
 	font-size: 13px !important;
 }
 
+#faq{
+	margin-top: 50px;
+	min-height: 100vh;
+	background-color:#f1f3f6;
+}
+
+#faq-panel{
+	margin-top: 20px;
+}
+
+.panel-content{
+	padding: 20px;
+	font-size: 15px;
+}
+
+.category{
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.faq-titles{
+	font-size: 16px;
+}
+.c-details{
+	font-size: 15px;
+	font-weight: 50px;
+}
+
+/*Resources*/
+#resource-top {
+	background: url('../images/resources/banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 480px;
+    width: 100%;
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+
+.f-13 {
+	font-size: 20px;
+}
+
+.resource-item img {
+	width: 200px;
+	-webkit-box-shadow: 0px 0px 2px 0px #6a6c6f;
+	margin-bottom: 10px;
+}
+
+.book-title {
+	font-size: 16px;
+	color: #01627D !important;
+}
+
+.get-it {
+	width: 230px !important;
+	border-color: #01BDF2;
+	color: #01BDF2 !important;
+	font-size: 14px;
+	font-weight: bold;
+	height: 40px !important;
+	margin-bottom: 10px;
+}
+
+.mt-30 {
+	margin-top: 30px;
+}
+
+.minus-mt-20 {
+	margin-top: -30px;
+}
+
 
 @media (max-width: 760px){
 	.insights-img{
 		width: 330px !important;
+	}
+
+	.pricing-table {
+		width: 300px;
 	}
 
 	.blog-img{
@@ -247,4 +506,3 @@ a:hover {
 		text-align: center !important;
 	}
 }
-

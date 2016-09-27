@@ -21,18 +21,27 @@ $(document).ready(function() {
 	    });
 
 
-	    
-	     $(".owl-carousel").owlCarousel({
+
+	     $("#owl").owlCarousel({
             center: true,
-            items:2,
+            singleItem:true,
             loop:true,
             autoplay: true,
             nav:true,
             dots:true,
-            margin: 100 
+            margin: 50,
+						responsiveClass:true,
+    				responsive:{
+        								0:{
+            							items:1,
+            							nav:true,
+													center: true
+        							 	},
+        			 					600:{
+													items:3,
+													center: true,
+            							nav:false
+        								}
+    									 }
         });
-
-
-
-
 	});

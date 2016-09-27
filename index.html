@@ -20,7 +20,11 @@
     <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css" />
 
     <!-- Owl carousel -->
-    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.css"/>
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.css"/>
+    <link rel="stylesheet" href="owlcarousel/owl.theme.css"/>
+
+    <!-- Hover CSS effects -->
+		<link href="styles/hover.css" rel="stylesheet" type="text/css">
 
     <!-- App styles -->
     <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
@@ -46,21 +50,19 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="index.html" class="navbar-brand"><span class="beta"><img class="logo1" src="images/logo1.png" alt="cocktail insights logo">Free Beta</span></a>
-            
-            
-            
+            <a href="index.html" class="navbar-brand"><span class="beta"><img class="logo1" src="images/logo1.png" alt="cocktail insights logo">Beta</span></a>
+
+
+
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li class="active"><a class="page-scroll" href="#page-top">Home</a></li>
-                <li><a class="page-scroll" page-scroll href="#insights">Insights</a></li>
-                <li><a class="page-scroll" page-scroll href="#features">Features</a></li>
-                <li><a class="page-scroll" page-scroll href="#signup">Sign up</a></li>
-                <!-- <li><a class="page-scroll" page-scroll href="#clients">Clients</a></li> -->
-                <!-- <li><a class="page-scroll" page-scroll href="#pricing">Pricing </a></li> -->
-                <li><a class="page-scroll" page-scroll href="#blogs">Blog</a></li>
-                
+                <li><a class="page-scroll" page-scroll href="#product">Product</a></li>
+                <li><a class="page-scroll" page-scroll href="pricing.html">Pricing</a></li>
+                <li><a class="page-scroll" target="blank" page-scroll href="https://medium.com/cocktail-insights">Blog</a></li>
+                <li><a class="page-scroll" page-scroll href="http://app.cocktailinsights.com/sign-up">Sign up</a></li>
+                <li><a class="page-scroll" page-scroll href="faq.html">FAQ</a></li>
             </ul>
         </div>
     </div>
@@ -70,21 +72,20 @@
     <div class="container">
         <div class="heading">
             <h1>
-                Increase your sales with social media
+                Create Ads That Work
             </h1>
-            <span id="sub-head">Helping eCommerce businesses and merchants <br/> grow their business with social media marketing</span>
-            <p class="small fs-15">
-               Social media marketing involves money and time. Get the most out of your social media marketing with Cocktail Insights.
+            <p id="sub-head" class="fs-15">
+              Advertising and analytics for online stores and retailers
            </p>
            <div class="shake">
-               <a target="blank" href="http://app.cocktailinsights.com/sign-up" class="page-scroll btn call-to-action  text-center" onclick="this.blur();">Create your free account</a>
+               <a target="blank" href="http://app.cocktailinsights.com/sign-up" class="page-scroll btn call-to-action  text-center" onclick="this.blur();">GET STARTED TODAY</a>
            </div>
        </div>
        <div class="heading-image animate-panel" data-child="item-animate" data-effect="fadeInRight">
            <div class="row">
                <div class="col-md-12">
                    <!-- <p class="small">Measuring and maximizing Social Media ROI has never been this easy for eCommerce businesses & merchants</p> -->
-                   <img class="item-animate header-img" src="images/landing/laptop.png" alt="dashboard">
+                   <img class="item-animate header-img" src="images/gifs/laptop.gif" alt="dashboard">
                </div>
 
            </div>
@@ -94,39 +95,57 @@
 </header>
 
 <section>
+  <div id="whatIs" class="container">
+    <div class="row">
+      <div class=" col-md-offset-2 col-md-8 text-center">
+        <h2><span class="brand-color-text">What is Cocktail Insights</span></h2>
+        <p class="desc">
+          Cocktail Insights is a social media advertising and analytics platform
+          that enables the creation of data driven marketing campaigns. Online sellers
+          and brands all over the world use Cocktail Insights to increase their marketing
+          returns, so what are you waiting for.
+        </p>
+
+      </div>
+
+    </div>
+  </div>
     <div class="container">
+
         <div class="row">
             <div class=" col-md-4 text-center">
-                <i class="fa fa-link brand-color-text icon-big"></i>
+              <div class="hvr-float-shadow">
+                <img id="integrations" src="/images/how/integrations.png" alt="" />
+              </div>
                 <h4>Easy Integrations</h4>
-                <p>Easily integrate your social media accounts and Google analytics</p>
+                <p class="desc">Easily integrate your social media accounts, your store and Google analytics</p>
             </div>
-            <div class="col-md-4 text-center">
-             <i class="fa fa-arrows-alt brand-color-text icon-big"></i>
-             <h4>Publish</h4>
-             <p>Post and publish ad campaigns to all your social accounts from a single dashboard</p>
-         </div>
+
          <div class=" col-md-4 text-center">
-             <i class="fa fa-bar-chart brand-color-text icon-big"></i>
-             <h4>Measure & Report</h4>
-             <p>Measure the impact and returns (ROI) of your social media marketing & efforts</p>
+           <div class="hvr-float-shadow">
+             <img id="ad" src="/images/how/ad.png" alt="" />
+           </div>
+             <h4>Create Data-driven Ads</h4>
+             <p class="desc">Publish data-driven Ad campaigns and increase your conversions and revenue</p>
          </div>
+         <div class="col-md-4 text-center">
+          <div class="hvr-float-shadow">
+            <img id="track" src="/images/how/track.png" alt="" />
+          </div>
+          <h4>Track, Analyse & Optimize</h4>
+          <p class="desc">Get deep insights, optimize your campaigns and increase your returns. </p>
+      </div>
      </div>
  </div>
 </section>
 
-<section id="insights" class=" bg-light">
+<section id="product" class=" bg-light">
     <div class="container">
-        <div class="row">
-            <div class="animated fadeInUp wow col-lg-12">
-                <h2><span class="brand-color-text">Insights </span>for your Social Media Marketing</h2>
-                <p>Know what you need to know to make your Social Media marketing a success</p>
-            </div>
-        </div>
+
         <div class="row m-t-md">
             <div class="animated fadeInUp wow  wow col-md-6">
                 <h4 class="m-t-xxxl">Target the right <span class="brand-color-text insights">Audience </span></h4>
-                <p>Analyse and know your audience. Target the right audience with your Social Media marketing and increase your conversions. Put your money where your audience are.</p>
+                <p class="desc">Cocktail Insights lets you know the right audience to target to increase conversions. Put your money where your customers are.</p>
             </div>
             <div class="animated fadeInUp wow  wow col-md-6">
                 <img class="insights-img" src="images/landing/audience.png" alt="audience insights" class="img-responsive">
@@ -136,21 +155,21 @@
 
         <div class="row m-t-xl">
             <div class="col-md-6 animated fadeInUp wow  wow">
-               <img class="insights-img" src="images/landing/content.png" alt="content insights" class="img-responsive">
+               <img class="insights-img" src="images/landing/insights.png" alt="content insights" class="img-responsive">
            </div>
            <div class="col-md-6 animated fadeInUp wow  wow">
-            <h4 class="m-t-xxl">Publish the right <span class="brand-color-text insights">Content </span></h4>
-            <p>Having difficulty determining the right content to increase enagement and conversions? Let Cocktail Insights tell you the right content that resonates with your audience.</p>
+            <h4 class="m-t-xxl">A single point of <span class="brand-color-text insights">Truth </span></h4>
+            <p class="desc">Monitor the pulse of your store and get actionable insights from a single point of truth insighted by multiple sources of data</p>
         </div>
     </div>
 
     <div class="row  m-t-xl">
         <div class="col-md-6 animated fadeInUp wow  wow">
-            <h4 class="m-t-xxl ">Post at the right <span class="brand-color-text insights">Time</span></h4>
-            <p>Know when your audience visit your website and post at the best time to increase traffic to your website.</p>
+            <h4 class="m-t-xxl ">Create effective <span class="brand-color-text insights">Retargeting</span></h4>
+            <p class="desc">Retarget your audience with ads based on what they did on your website or your social page</p>
         </div>
         <div class="col-md-6 animated fadeInUp wow  wow">
-            <img class="insights-img" src="images/landing/time.png" alt="right time to post" class="img-responsive">
+            <img class="insights-img" src="images/landing/retarget.png" alt="right time to post" class="img-responsive">
         </div>
     </div>
     <div class="row m-t-xl">
@@ -158,8 +177,8 @@
          <img class="insights-img" src="images/landing/returns.png" alt="measure ROI" class="img-responsive">
      </div>
      <div class="col-md-6 animated fadeInUp wow  wow">
-        <h4 class="m-t-xxl">Maximize your Social media <span class="brand-color-text insights">Returns (ROI)</span></h4>
-        <p>Not sure how much you are making from your Social Media efforts? Easily measure revenue, conversions and enagement and maximize them using Cocktail Insights.</p>
+        <h4 class="m-t-xxl">Track & maximize your <span class="brand-color-text insights">Returns (ROI)</span></h4>
+        <p class="desc">Not sure how much you are making from your Social Media efforts? Easily measure revenue, conversions, enagement and maximize them using Cocktail Insights.</p>
     </div>
 </div>
 
@@ -171,29 +190,20 @@
         <div class="row text-center">
             <div class="col-lg-12">
                 <h2><span class="brand-color-text">Features</span></h2>
-                <!-- <p>Lorem Ipsum available, but the majority have suffered alteration euismod. </p> -->
+
             </div>
         </div>
         <div class="row text-center">
-            <div class="col-md-3">
+            <div class="col-md-3 col-lg-offset-3">
                 <h4 class="m-t-lg"><i class="pe-7s-date f-icons icon-big"></i></h4>
-                <strong>Scheduling</strong>
-                <p>Easily schedule, queue and automate your posts</p>
+                <h4><strong>Scheduling</strong></h4>
+                <p class="desc">Easily schedule, queue and automate your posts</p>
             </div>
-            <div class="col-md-3">
-                <h4 class="m-t-lg"><i class="pe-7s-speaker f-icons icon-big"></i></h4>
-                <strong>Ads automation</strong>
-                <p>Get data backed recommendations, optimize and automate your Ads</p>
-            </div>
-            <div class="col-md-3">
-                <h4 class="m-t-lg"><i class="pe-7s-users f-icons icon-big"></i></h4>
-                <strong>Team collaboration</strong>
-                <p>Add members of your team and work together in one place</p>
-            </div>
+
             <div class="col-md-3">
                 <h4 class="m-t-lg"><i class="pe-7s-mail-open-file f-icons icon-big"></i></h4>
-                <strong>Reports</strong>
-                <p>Get weekly "fizz" of key metrics & social media insights</p>
+                <h4><strong>Reports</strong></h4>
+                <p class="desc">Get weekly "fizz" of key metrics & marketing insights</p>
             </div>
         </div>
 
@@ -205,7 +215,7 @@
             <div class="row text-center">
                 <div class="col-md-6 col-md-offset-3">
                     <h2><span class="brand-color-text">Integrations</span></h2>
-                    <p>
+                    <p class="desc">
                         We are working to integrate more platforms
                     </p>
                 </div>
@@ -248,17 +258,8 @@
                             <img class="soon" src="images/integrations/in.png" alt="linkedin integration">
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img class="soon" src="images/integrations/g.png" alt="google plus integration">
-                        </div>
-                        
-                    </div>
-                    
                 </div>
             </div>
-
-
         </div>
 
     </section>
@@ -269,8 +270,8 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-12">
-                    <h2>Create your<span class="brand-color-text"> free account</span></h2>
-                    <p>Cocktail Insights is in free beta. Grab you free account now!</p>
+                    <h2>Start scaling your revenue with<span class="brand-color-text"> Data</span></h2>
+                    <p class="desc">Grab you free account now!</p>
                 </div>
             </div>
 
@@ -279,7 +280,7 @@
                 <div class="row text-center m-t-lg">
                     <div class="col-md-8 col-md-offset-2">
                         <div class="shake">
-                            <a target="blank" href="http://app.cocktailinsights.com/sign-up" class="page-scroll btn call-to-action btn-sm " onclick="this.blur();">Create your free account</a>
+                            <a target="blank" href="http://app.cocktailinsights.com/sign-up" class="page-scroll btn call-to-action btn-sm " onclick="this.blur();">GET STARTED TODAY</a>
                         </div>
 
                     </div>
@@ -296,19 +297,26 @@
         <div class="container">
             <div id="blog-title" class="row text-center">
                 <div class="col-md-6 col-md-offset-3">
-                    <h2><a href="http://blog.cocktailinsights.com/" target="blank"><span class="brand-color-text">Blogs</span></a></h2>
-                    <p>
+                    <h2><span class="brand-color-text">Free</span> e-Books and White Papers</h2>
+                    <p class="desc">
                         Learn ways to increase the returns of your social media marketing
                     </p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <div class="blog-case owl-theme owl-carousel">
-                      <div class="blog-img"><a target="blank" href="http://blog.cocktailinsights.com/2016/02/03/social-media-and-ecommerce/"><img src="images/landing/blog1.png" alt="social media and ecommerce"></a></div>
-                      <div class="blog-img"><a target="blank" href="http://blog.cocktailinsights.com/2016/04/08/Growing-our-betalist-with-BetaList/"><img src="images/landing/blog2.png"  alt="Growing our beta signups with betalist"></a></div>
+                <div class="col-md-6 col-md-offset-3">
+                    <div id="owl" class="blog-case  owl-carousel">
+                      <div class="blog-img"><img src="images/landing/book1.png" alt="social media and ecommerce"></div>
+                      <div class="blog-img"><img src="images/landing/book2.png"  alt="Growing our beta signups with betalist"></div>
+                      <div class="blog-img"><img src="images/landing/book3.png"  alt="Growing our beta signups with betalist"></div>
+
                   </div>
               </div>
+          </div>
+          <div id="resources" class="row">
+            <div class="col-md-offset-4 col-md-4 text-center">
+              <a href="/resources.html" class="btn call-to-action2  btn-sm">View all resources</a>
+            </div>
           </div>
       </div>
   </section>
@@ -370,10 +378,16 @@
     <script src="vendor/metisMenu/dist/metisMenu.min.js"></script>
     <script src="vendor/iCheck/icheck.min.js"></script>
     <script src="vendor/sparkline/index.js"></script>
+    <script src="vendor/wnumb-1.0.2/wNumb.js"></script>
+    <script src="vendor/noUiSlider.8.5.1/nouislider.js"></script>
+
+    <script src="/owlcarousel/owl.carousel.js"></script>
 
     <!-- App scripts -->
     <script src="scripts/homer.js"></script>
     <script src="scripts/myjs.js"></script>
+
+
 
     <!-- Local script for menu handle -->
     <!-- It can be also directive -->
@@ -403,13 +417,12 @@
   </script>
 
   <!--mail-chimp-->
-  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+  <!--<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>-->
 
-  <!-- Owl carousel -->
-  <script src="owlcarousel/owl.carousel.min.js"></script>
+
 
   <!--Start of Tawk.to Script-->
-  <script type="text/javascript">
+  <!--<script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
         var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
@@ -419,10 +432,11 @@
         s1.setAttribute('crossorigin','*');
         s0.parentNode.insertBefore(s1,s0);
     })();
-</script>
+</script>-->
 <!--End of Tawk.to Script-->
 
-<script type="text/javascript">
+<!-- User report script -->
+<!-- <script type="text/javascript">
     var _urq = _urq || [];
     _urq.push(['initSite', 'b147e2c5-ac1e-457d-8c21-3086b8b53c37']);
     (function() {
@@ -430,10 +444,10 @@
         ur.src = ('https:' == document.location.protocol ? 'https://cdn.userreport.com/userreport.js' : 'http://cdn.userreport.com/userreport.js');
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ur, s);
     })();
-</script>
+</script>-->
 
 <!-- GA -->
-<script>
+<!--<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -442,7 +456,7 @@
   ga('create', 'UA-73940435-3', 'auto');
   ga('send', 'pageview');
 
-</script>
+</script>-->
 
 </body>
 </html>

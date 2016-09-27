@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Page title -->
+  <title>Cocktail Insights | An analytics platform for measuring and maximizing Social Media ROI</title>
+  <meta name="description" content="Cocktail Insights is a social media insights and marketing platform that helps eCommerce businesses and merchants increase their sales through social media. ">
+
+  <!-- Favicon link -->
+  <link rel="icon" type="image/png" href="favicon.png" / >
+
+  <!-- Vendor styles -->
+  <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css" />
+  <link rel="stylesheet" href="vendor/metisMenu/dist/metisMenu.css" />
+  <link rel="stylesheet" href="vendor/animate.css/animate.css" />
+  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="vendor/noUiSlider.8.5.1/nouislider.css" />
+  <link rel="stylesheet" href="vendor/noUiSlider.8.5.1/nouislider.pips.css" />
+
+  <!-- App styles -->
+  <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
+  <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/helper.css" />
+  <link rel="stylesheet" href="styles/style.css"/>
+  <link rel="stylesheet" href="styles/mycss.css"/>
+
+</head>
+<body class="landing-page">
+
+  <!-- Simple splash screen-->
+  <!-- <div class="splash"> <div class="color-line"></div><div class="splash-title"><h1>Cocktail Insights</h1><p>Measure & maximize the returns(ROI) of your social media marketing </p><div class="spinner"> <div class="rect1"></div> <div class="rect2"></div> <div class="rect3"></div> <div class="rect4"></div> <div class="rect5"></div> </div> <p>loading...</p></div></div> -->
+  <!--[if lt IE 7]>
+  <p class="alert alert-danger">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="index.html" class="navbar-brand"><span class="beta"><img class="logo1" src="images/logo1.png" alt="cocktail insights logo">Beta</span></a>
+      </div>
+
+      <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+              <li><a class="page-scroll" href="index.html">Home</a></li>
+              <li class="active"><a class="page-scroll" page-scroll href="pricing.html">Pricing</a></li>
+              <li><a class="page-scroll" target="blank" page-scroll href="https://medium.com/cocktail-insights">Blog</a></li>
+              <li><a class="page-scroll" page-scroll href="http://app.cocktailinsights.com/sign-up">Sign up</a></li>
+
+
+              <li><a class="page-scroll" page-scroll href="faq.html">FAQ</a></li>
+          </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="pricing">
+    <div id="pricing-header" class="container" >
+      <div class="row text-center">
+        <div class="col-lg-12">
+          <h2>Our <span class="brand-color-text bold"> Pricing</span></h2>
+        </div>
+        <div>
+          <h3>Use the slider to see how our fee is calculated from your advertising spend </h3>
+        </div>
+      </div>
+    </div>
+
+    <div id="slider-holder" class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h4 >Monthly Ad Spend</h4>
+          <div id="slider-value">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="row margin-top-20">
+        <div class="col-md-12 text-center">
+          <h4>Estimated price  <span id="per"></span> </h4>
+          <div id="estimate"> </div>
+        </div>
+      </div>
+
+      <div id="slider"></div>
+      <div id="pips-range"></div>
+    </div>
+
+    <div id="price-desc" class="row">
+      <div class="col-md-12">
+        <div class="container text-center text">
+          The fee is directly linked to the amount spent in your campaigns, the minimum Ad spend is $10. There is flat monthly fee of $9 regardless of the amount you spend on your advertising.
+          Read our Terms & Conditions for more details.
+        </div>
+      </div>
+    </div>
+
+    <div id="price-table" class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <table class="table pricing-table">
+            <thead>
+              <tr>
+                <th>Monthly spend range
+                </th><th>Monthly fee
+                </th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="currency">$ 10</span> - <span class="currency">$ 10,000</span></td>
+                  <td>10.00%</td>
+                </tr>
+                <tr>
+                  <td><span class="currency">$ 10,000</span> - <span class="currency">$ 100,000</span></td>
+                  <td>6.00%</td>
+                </tr>
+                <tr>
+                  <td><span class="currency">$ 100,000</span> - <span class="currency">$ 1,000,000</span></td>
+                  <td>4.00%</td>
+                </tr>
+                <tr>
+                  <td>More than <span class="currency">$ 1,000,000</span></td>
+                  <td>Contact Us</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light">
+      <div id="perks" class="container" >
+        <div class="row text-center">
+          <div class="col-lg-12">
+            <h2>It's about<span class="brand-color-text bold"> Companionship</span></h2>
+          </div>
+          <div>
+            <h4 class="desc">We offer you more </h4>
+          </div>
+        </div>
+
+        <div class="row perks">
+          <div class="col-md-2">
+            <img id="support" class="img-responsive center-block pull-right hidden-xs" src="images/price/support2.png" alt="">
+            <img id="support" class="img-responsive center-block visible-xs mt-30" src="images/price/support2.png" alt="">
+          </div>
+
+          <div class="col-md-4">
+            <h5 class="perk-item">Best Customer Support</h5>
+            <p class="perk-desc">Our world class customer support team would respond and fix your issues in minutes. Whether its a technical
+              issue or business issue we are always available 24/5 to help you.</p>
+            </div>
+
+            <div class="col-md-2">
+              <img id="books" src="images/price/books.png" alt="" class="img-responsive img-rounded center-block pull-right hidden-xs">
+              <img id="books" src="images/price/books.png" alt="" class="img-responsive img-rounded center-block visible-xs mt-30">
+            </div>
+
+            <div class="col-md-4">
+              <h5 class="perk-item">Learning Resources</h5>
+              <p class="perk-desc">We offer you access to world class learning resources and Ad optimization secrets
+                to help make you abreast with current marketing trends and techniques.
+              </p>
+            </div>
+          </div>
+          <div class="row perks">
+                <div class="col-md-2">
+                  <img id="manager" src="images/price/manager.png" alt="" class="img-responsive img-rounded center-block pull-right hidden-xs">
+                  <img id="manager" src="images/price/manager.png" alt="" class="img-responsive img-rounded center-block visible-xs minus-mt-20">
+                </div>
+
+                <div class="col-md-4">
+                  <h5 class="perk-item">Dedicated Account Manager</h5>
+                  <p class="perk-desc">Your account manager will help you with optimization tips and marketing advice
+                    to help you scale your marketing ROI.
+                  </p>
+                </div>
+
+
+                <div class="col-md-2">
+                  <img id="ad-service" src="images/price/service.png" alt="" class="img-responsive img-rounded center-block pull-right hidden-xs">
+                  <img id="ad-service" src="images/price/service.png" alt="" class="img-responsive img-rounded center-block visible-xs mt-30">
+                </div>
+
+                <div class="col-md-4">
+                  <h5 class="perk-item">Ad Management Services</h5>
+                  <p class="perk-desc">Do you want to outsource your social media marketing? Our subsidiary social media marketing & management
+                    company, <span class="brand-color-text bold"> Ad Geek</span> can help you. </p>
+                  </div>
+
+
+
+
+            </div>
+          </div>
+
+        </section>
+
+
+        <section id="contact" class=" foot bg-light">
+          <div class="container">
+            <div class="row ">
+              <div class="col-md-6">
+
+              </div>
+            </div>
+
+            <div class="row m-t-lg">
+
+              <div class="col-md-4 f-down">
+                <h2><img class="logo" src="images/cocktail.png" alt="cocktail logo"><span class="text-success blue-text">Cocktail Insights</span></h2>
+                <p class="f-titles blue-text ">Follow Us</p>
+                <a href="https://twitter.com/cocktailinsight" target="blank"><i id="twitter" class="social fa fa-twitter-square"></i></a>
+                <a href="https://www.facebook.com/cocktailinsights/" target="blank"><i id="fb" class="social fa fa-facebook-square"></i></a>
+                <a href="https://www.linkedin.com/company/cocktail-insights?trk=top_nav_home" target="blank"><i id="lkin" class="social fa fa-linkedin-square"></i></a>
+              </div>
+              <div class="col-md-4 f-down">
+                <p class="f-titles blue-text">Other links</p>
+                <div class="f-down ">
+                  <strong><a class="f-text" target="blank" href="http://blog.cocktailinsights.com/">Blog</a></strong></div>
+
+                  <p class="f-titles blue-text">Contact Us</p>
+                  <div class="f-down ">
+                    <strong class="f-text">support@cocktailinsights.com</strong>
+                  </div>
+                </div>
+                <div class="col-md-3 text-left">
+                  <!-- Begin MailChimp Signup Form -->
+
+                  <div id="mc_embed_signup" class="bg">
+                    <form action="//cocktailinsights.us13.list-manage.com/subscribe/post?u=73417957500a00eeeed9ac22e&amp;id=d572aeae8a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                      <div id="mc_embed_signup_scroll" class="form-group">
+                        <label class=" f-titles blue-text control-label sm-top" for="mce-EMAIL">Subscribe to our mailing list</label>
+                        <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_73417957500a00eeeed9ac22e_d572aeae8a" tabindex="-1" value=""></div>
+                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn m-top btn-newsletter"></div>
+                      </div>
+                    </form>
+                  </div>
+
+                  <!--End mc_embed_signup-->
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
+          <!-- Vendor scripts -->
+          <script src="vendor/jquery/dist/jquery.min.js"></script>
+          <script src="vendor/jquery-ui/jquery-ui.min.js"></script>
+          <script src="vendor/slimScroll/jquery.slimscroll.min.js"></script>
+          <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+          <script src="vendor/metisMenu/dist/metisMenu.min.js"></script>
+          <script src="vendor/iCheck/icheck.min.js"></script>
+          <script src="vendor/sparkline/index.js"></script>
+          <script src="vendor/noUiSlider.8.5.1/nouislider.js"></script>
+          <script src="vendor/wnumb-1.0.2/wNumb.js"></script>
+
+          <!-- App scripts -->
+          <script src="scripts/homer.js"></script>
+          <script src="scripts/price.js"></script>
+
+          <script>s=document.getElementById('estimate').value
+          console.log(s);</script>
+
+
+          <!-- Local script for menu handle -->
+          <!-- It can be also directive -->
+          <script>
+          $(document).ready(function () {
+
+            // Page scrolling feature
+            $('a.page-scroll').bind('click', function(event) {
+              var link = $(this);
+              $('html, body').stop().animate({
+                scrollTop: $(link.attr('href')).offset().top - 50
+              }, 500);
+              event.preventDefault();
+            });
+
+            $('body').scrollspy({
+              target: '.navbar-fixed-top',
+              offset: 80
+            });
+
+          });
+          </script>
+          <!--wow.js-->
+          <script src="scripts/wow.min.js"></script>
+          <script>
+          new WOW().init();
+          </script>
+
+          <!--mail-chimp-->
+          <!--<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>-->
+
+          <!--Start of Tawk.to Script-->
+          <!--<script type="text/javascript">
+          var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+          (function(){
+          var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+          s1.async=true;
+          s1.src='https://embed.tawk.to/57055a70e550783e6825518d/default';
+          s1.charset='UTF-8';
+          s1.setAttribute('crossorigin','*');
+          s0.parentNode.insertBefore(s1,s0);
+        })();
+      </script>-->
+      <!--End of Tawk.to Script-->
+
+      <!--<script type="text/javascript">
+      var _urq = _urq || [];
+      _urq.push(['initSite', 'b147e2c5-ac1e-457d-8c21-3086b8b53c37']);
+      (function() {
+      var ur = document.createElement('script'); ur.type = 'text/javascript'; ur.async = true;
+      ur.src = ('https:' == document.location.protocol ? 'https://cdn.userreport.com/userreport.js' : 'http://cdn.userreport.com/userreport.js');
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ur, s);
+    })();
+  </script>-->
+
+  <!-- GA -->
+  <!--<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-73940435-3', 'auto');
+ga('send', 'pageview');
+
+</script>-->
+
+</body>
+</html>
