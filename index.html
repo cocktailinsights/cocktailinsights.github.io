@@ -1,462 +1,358 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en-us" class="no-js">
 
+  <head>
     <meta charset="utf-8">
+    <title>Cocktail Insights</title>
+    <meta name="description" content="Create social media Ads that work">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Cocktail Insights">
 
-    <!-- Page title -->
-    <title>Cocktail Insights | An analytics platform for measuring and maximizing Social Media ROI</title>
-    <meta name="description" content="Cocktail Insights is a social media insights and marketing platform that helps eCommerce businesses and merchants increase their sales through social media. ">
+    <!-- ================= Favicon ================== -->
+    <!-- Standard -->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <!-- Retina iPad Touch Icon-->
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon-retina-ipad.png">
+    <!-- Retina iPhone Touch Icon-->
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon-retina-iphone.png">
+    <!-- Standard iPad Touch Icon-->
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon-standard-ipad.png">
+    <!-- Standard iPhone Touch Icon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon-standard-iphone.png">
 
-    <!-- Favicon link -->
-    <link rel="icon" type="image/png" href="favicon.png" / >
+    <!-- ============== Resources style ============== -->
+    <link rel="stylesheet" href="css/style.css" />
 
-    <!-- Vendor styles -->
-    <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css" />
-    <link rel="stylesheet" href="vendor/metisMenu/dist/metisMenu.css" />
-    <link rel="stylesheet" href="vendor/animate.css/animate.css" />
-    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css" />
+    <!-- Modernizr runs quickly on page load to detect features -->
+    <script src="js/modernizr.custom.js"></script>
+  </head>
 
-    <!-- Owl carousel -->
-    <link rel="stylesheet" href="owlcarousel/owl.carousel.css"/>
-    <link rel="stylesheet" href="owlcarousel/owl.theme.css"/>
+  <body>
 
-    <!-- Hover CSS effects -->
-		<link href="styles/hover.css" rel="stylesheet" type="text/css">
-
-    <!-- App styles -->
-    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
-    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/helper.css" />
-    <link rel="stylesheet" href="styles/style.css"/>
-    <link rel="stylesheet" href="styles/mycss.css"/>
-
-</head>
-<body class="landing-page">
-
-    <!-- Simple splash screen-->
-    <div class="splash"> <div class="color-line"></div><div class="splash-title"><h1>Cocktail Insights</h1><p>Measure & maximize the returns(ROI) of your social media marketing </p><div class="spinner"> <div class="rect1"></div> <div class="rect2"></div> <div class="rect3"></div> <div class="rect4"></div> <div class="rect5"></div> </div> <p>loading...</p></div></div>
-<!--[if lt IE 7]>
-<p class="alert alert-danger">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
-
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="index.html" class="navbar-brand"><span class="beta"><img class="logo1" src="images/logo1.png" alt="cocktail insights logo">Beta</span></a>
-
-
-
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a class="page-scroll" href="#page-top">Home</a></li>
-                <li><a class="page-scroll" page-scroll href="#product">Product</a></li>
-                <li><a class="page-scroll" page-scroll href="pricing.html">Pricing</a></li>
-                <li><a class="page-scroll" target="blank" page-scroll href="https://medium.com/cocktail-insights">Blog</a></li>
-                <li><a class="page-scroll" page-scroll href="http://app.cocktailinsights.com/sign-up">Sign up</a></li>
-                <li><a class="page-scroll" page-scroll href="faq.html">FAQ</a></li>
-            </ul>
-        </div>
+    <!-- Page preloader -->
+    <div id="loading">
+      <div id="preloader">
+        <span></span>
+        <span></span>
+      </div>
     </div>
-</nav>
 
-<header id="page-top">
-    <div class="container">
-        <div class="heading">
-            <h1>
-                Create Ads That Work
-            </h1>
-            <p id="sub-head" class="fs-15">
-              Advertising and analytics for online stores and retailers
-           </p>
-           <div class="shake">
-               <a target="blank" href="http://app.cocktailinsights.com/sign-up" class="page-scroll btn call-to-action  text-center" onclick="this.blur();">GET STARTED TODAY</a>
-           </div>
-       </div>
-       <div class="heading-image animate-panel" data-child="item-animate" data-effect="fadeInRight">
-           <div class="row">
-               <div class="col-md-12">
-                   <!-- <p class="small">Measuring and maximizing Social Media ROI has never been this easy for eCommerce businesses & merchants</p> -->
-                   <img class="item-animate header-img" src="images/gifs/laptop.gif" alt="dashboard">
-               </div>
+    <canvas id="dotty"></canvas>
 
-           </div>
+    <!-- Overlay and Star effect -->
+    <div class="global-overlay">
+      <div class="overlay skew-part">
 
-       </div>
-   </div>
-</header>
-
-<section>
-  <div id="whatIs" class="container">
-    <div class="row">
-      <div class=" col-md-offset-2 col-md-8 text-center">
-        <h2><span class="brand-color-text">What is Cocktail Insights</span></h2>
-        <p class="desc">
-          Cocktail Insights is a social media advertising and analytics platform
-          that enables the creation of data driven marketing campaigns. Online sellers
-          and brands all over the world use Cocktail Insights to increase their marketing
-          returns, so what are you waiting for.
-        </p>
+        <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
 
       </div>
-
     </div>
-  </div>
-    <div class="container">
 
-        <div class="row">
-            <div class=" col-md-4 text-center">
-              <div class="hvr-float-shadow">
-                <img id="integrations" src="/images/how/integrations.png" alt="" />
+    <!-- START - Home/Left Part -->
+		<section id="left-side" class="" style="opacity: 1;">
+
+			<!-- Your logo -->
+			<img src="/img/logo.png" alt="" class="brand-logo mCS_img_loaded">
+
+			<div class="content">
+        <h1 class="text-intro animated-middle fadeInUp">THE BEST WAY TO AUTOMATE FACEBOOK ADVERTISING
+				</h1>
+        <h2 class="text-intro animated-middle fadeInUp">Currently available for <span id="shopify">Shopify</span> merchants only </h2>
+
+      <div style="margin-bottom:30px;">
+        <h3  class="text-intro launch animated-middle fadeInUp">Launching in :
+					<div id="getting-started">13 Days 04h 25m 43s</div>
+				</h3>
+      </div>
+
+
+				<nav>
+					<ul>
+						<li>
+							<a href="#" id="open-more-info" data-target="right-side" class="light-btn text-intro animated-middle fadeInUp">More Information</a>
+						</li>
+						<li>
+							<a data-dialog="somedialog" class="action-btn trigger text-intro animated-middle fadeInUp">Notify Me!</a>
+						</li>
+					</ul>
+				</nav>
+
+			</div>
+
+			<!-- Social icons -->
+			<div class="social-icons">
+
+				<a target="blank" href="https://www.facebook.com/1090412327663839/"><i class="fa fa-facebook"></i></a>
+				<a target="blank" href="https://twitter.com/cocktailinsight"><i class="fa fa-twitter"></i></a>
+				<a target="blank" href="https://www.linkedin.com/company/cocktail-insights"><i class="fa fa-linkedin"></i></a>
+
+			</div>
+
+		</section>
+    <!-- END - Home/Left Part -->
+
+    <!-- START - More Informations/Right Part -->
+    <section id="right-side" class="hide-right">
+
+				<div class="content">
+
+					<h3>Create <span id="automate">Facebook Ads </span>that work</h3>
+
+					<p>Increase your conversion and revenue by
+						creating data-driven advertising campaigns. Automate your Ad creation process and be ready to go in seconds.
+
+						<br><br>
+
+					</p>
+					<div class="row">
+						<div class="col-lg-12">
+						<div>
+							<img id="img1" class="imgs" src="/img/L-retarget2.png" alt="" class="img-rounded center-block">
+						</div>
+						<div >
+							<img id="img2" class="imgs" src="/img/L-roi2.png" alt="" class="img-rounded center-block">
+						</div>
+						<div >
+							<img id="img3" class="imgs" src="/img/l-analytics.png" alt="" class="img-rounded center-block">
+						</div>
+					</div>
+					</div>
+
+					<span class="separator"></span>
+
+					<div class="row">
+						<h3>Why a <span id="automate">Re-launch</span>?</h3>
+						<h2>Because we listened</h2>
+						<p>Feedback from our beta users gave us insight into the advertsing needs of eCommerce businesses
+							or an online merchants. We decided to enable our users to easily and comprehensively create Facebook
+              Ads with better targeting
+
+							<br><br>
+
+						</p>
+					</div>
+
+					<!-- START - Contact Form -->
+
+					<!-- END - Contact Form -->
+
+					<!-- Answer for the contact form is displayed in the next div, do not remove it. -->
+
+					<div class="info-contact block row">
+
+						<div class="col-xs-12 col-sm-12 col-lg-12 item-map">
+							<div class="contact-item"><i class="icon ion-ios-email"></i>
+								<p><a href="mailto:your-email@good.com">support@cocktailinsights.com</a>
+								</p>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+				<!-- /. Content -->
+
+      <footer>
+
+        <p>© Cocktail Insights - Create Ads That Work</p>
+      </footer>
+
+    </section>
+
+    <!-- START - More Informations/Right Part -->
+
+    <!-- Button Cross to close the More Informations/Right Part -->
+    <button id="close-more-info" class="hide-close"><i class="icon ion-ios-close-outline"></i></button>
+
+    <!-- START - Newsletter Popup -->
+    <div id="somedialog" class="dialog">
+
+      <div class="dialog__overlay"></div>
+
+      <div class="dialog__content">
+
+        <div class="dialog-inner">
+
+          <h4>You like taking the lead of line?</h4>
+
+          <p>Being the first to know always feels great... Signing up to our newsletter gives you <strong>exclusive access to our Grand Opening!</strong></p>
+
+          <!-- Newsletter Form -->
+          <div id="subscribe">
+
+            <form action="php/notify-me.php" id="notifyMe" method="POST">
+
+              <div class="form-group">
+
+                <div class="controls">
+
+                  <!-- Field  -->
+                  <input type="text" id="mail-sub" name="email" placeholder="Click here to write your email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Click here to write your email'" class="form-control email srequiredField" />
+
+                  <!-- Spinner top left during the submission -->
+                  <i class="fa fa-spinner opacity-0"></i>
+
+                  <!-- Button -->
+                  <button class="btn btn-lg submit">Get notified</button>
+
+                  <div class="clear"></div>
+
+                </div>
+
               </div>
-                <h4>Easy Integrations</h4>
-                <p class="desc">Easily integrate your social media accounts, your store and Google analytics</p>
+
+            </form>
+
+            <!-- Answer for the newsletter form is displayed in the next div, do not remove it. -->
+            <div class="block-message">
+
+              <div class="message">
+
+                <p class="notify-valid"></p>
+
+              </div>
+
             </div>
 
-         <div class=" col-md-4 text-center">
-           <div class="hvr-float-shadow">
-             <img id="ad" src="/images/how/ad.png" alt="" />
-           </div>
-             <h4>Create Data-driven Ads</h4>
-             <p class="desc">Publish data-driven Ad campaigns and increase your conversions and revenue</p>
-         </div>
-         <div class="col-md-4 text-center">
-          <div class="hvr-float-shadow">
-            <img id="track" src="/images/how/track.png" alt="" />
           </div>
-          <h4>Track, Analyse & Optimize</h4>
-          <p class="desc">Get deep insights, optimize your campaigns and increase your returns. </p>
+          <!-- /. Newsletter Form -->
+
+        </div>
+        <!-- /. dialog-inner -->
+
+        <!-- Button Cross to close the Newsletter Popup -->
+        <button class="close-newsletter" data-dialog-close><i class="icon ion-close-round"></i></button>
+
       </div>
-     </div>
- </div>
-</section>
+      <!-- /. dialog__content -->
 
-<section id="product" class=" bg-light">
-    <div class="container">
-
-        <div class="row m-t-md">
-            <div class="animated fadeInUp wow  wow col-md-6">
-                <h4 class="m-t-xxxl">Target the right <span class="brand-color-text insights">Audience </span></h4>
-                <p class="desc">Cocktail Insights lets you know the right audience to target to increase conversions. Put your money where your customers are.</p>
-            </div>
-            <div class="animated fadeInUp wow  wow col-md-6">
-                <img class="insights-img" src="images/landing/audience.png" alt="audience insights" class="img-responsive">
-            </div>
-
-        </div>
-
-        <div class="row m-t-xl">
-            <div class="col-md-6 animated fadeInUp wow  wow">
-               <img class="insights-img" src="images/landing/insights.png" alt="content insights" class="img-responsive">
-           </div>
-           <div class="col-md-6 animated fadeInUp wow  wow">
-            <h4 class="m-t-xxl">A single point of <span class="brand-color-text insights">Truth </span></h4>
-            <p class="desc">Monitor the pulse of your store and get actionable insights from a single point of truth insighted by multiple sources of data</p>
-        </div>
     </div>
+    <!-- END - Newsletter Popup -->
 
-    <div class="row  m-t-xl">
-        <div class="col-md-6 animated fadeInUp wow  wow">
-            <h4 class="m-t-xxl ">Create effective <span class="brand-color-text insights">Retargeting</span></h4>
-            <p class="desc">Retarget your audience with ads based on what they did on your website or your social page</p>
-        </div>
-        <div class="col-md-6 animated fadeInUp wow  wow">
-            <img class="insights-img" src="images/landing/retarget.png" alt="right time to post" class="img-responsive">
-        </div>
-    </div>
-    <div class="row m-t-xl">
-        <div class="col-md-6 animated fadeInUp wow  wow">
-         <img class="insights-img" src="images/landing/returns.png" alt="measure ROI" class="img-responsive">
-     </div>
-     <div class="col-md-6 animated fadeInUp wow  wow">
-        <h4 class="m-t-xxl">Track & maximize your <span class="brand-color-text insights">Returns (ROI)</span></h4>
-        <p class="desc">Not sure how much you are making from your Social Media efforts? Easily measure revenue, conversions, enagement and maximize them using Cocktail Insights.</p>
-    </div>
-</div>
+    <!-- Root element of PhotoSwipe, the gallery. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
-</div>
-</section>
+      <!-- Background of PhotoSwipe.
+        It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
 
-<section id="features">
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-lg-12">
-                <h2><span class="brand-color-text">Features</span></h2>
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
 
-            </div>
-        </div>
-        <div class="row text-center">
-            <div class="col-md-3 col-lg-offset-3">
-                <h4 class="m-t-lg"><i class="pe-7s-date f-icons icon-big"></i></h4>
-                <h4><strong>Scheduling</strong></h4>
-                <p class="desc">Easily schedule, queue and automate your posts</p>
+          <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+              <div class="pswp__item"></div>
+              <div class="pswp__item"></div>
+              <div class="pswp__item"></div>
             </div>
 
-            <div class="col-md-3">
-                <h4 class="m-t-lg"><i class="pe-7s-mail-open-file f-icons icon-big"></i></h4>
-                <h4><strong>Reports</strong></h4>
-                <p class="desc">Get weekly "fizz" of key metrics & marketing insights</p>
-            </div>
-        </div>
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
 
-        <div class="line"> <hr></div>
-    </div>
+              <div class="pswp__top-bar">
 
-    <div class="container m-top">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-6 col-md-offset-3">
-                    <h2><span class="brand-color-text">Integrations</span></h2>
-                    <p class="desc">
-                        We are working to integrate more platforms
-                    </p>
-                </div>
-            </div>
+                <!--  Controls are self-explanatory. Order can be changed. -->
 
-            <div class="row text-center m-t-lg">
-                <div class="col-md-6">
+                <div class="pswp__counter"></div>
 
-                    <div class="row">
-                        <div class="integrate col-md-6">
-                            <img class="integrate-img" src="images/integrations/f.png" alt="facebook integration">
-                        </div>
-                        <div class="integrate col-md-6">
-                            <img class="integrate-img" src="images/integrations/gA.png" alt="google analytics integration">
-                        </div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <div class="pswp__preloader">
+                  <div class="pswp__preloader__icn">
+                    <div class="pswp__preloader__cut">
+                      <div class="pswp__preloader__donut"></div>
                     </div>
-                    <div class="row">
-                        <div class="integrate col-md-6">
-                            <img class="integrate-img" src="images/integrations/s1.png" alt="shopify integration">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-
-                    <div class="row">
-
-                        <div class="col-md-6">
-                            <img class="soon" src="images/integrations/t.png" alt="twitter integration">
-                        </div>
-                        <div class="col-md-6">
-                            <img class="soon" src="images/integrations/p.png" alt="pinterest integration">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img class="soon" src="images/integrations/i.png" alt="instagram integration">
-                        </div>
-                        <div class="col-md-6">
-                            <img class="soon" src="images/integrations/in.png" alt="linkedin integration">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-
-
-    <section id="signup" class="bg-light">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-12">
-                    <h2>Start scaling your revenue with<span class="brand-color-text"> Data</span></h2>
-                    <p class="desc">Grab you free account now!</p>
-                </div>
-            </div>
-
-            <div class="container">
-
-                <div class="row text-center m-t-lg">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div class="shake">
-                            <a target="blank" href="http://app.cocktailinsights.com/sign-up" class="page-scroll btn call-to-action btn-sm " onclick="this.blur();">GET STARTED TODAY</a>
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-
-            </div>
-        </div>
-    </section>
-
-    <section id="blogs">
-        <div class="container">
-            <div id="blog-title" class="row text-center">
-                <div class="col-md-6 col-md-offset-3">
-                    <h2><span class="brand-color-text">Free</span> e-Books and White Papers</h2>
-                    <p class="desc">
-                        Learn ways to increase the returns of your social media marketing
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3">
-                    <div id="owl" class="blog-case  owl-carousel">
-                      <div class="blog-img"><img src="images/landing/book1.png" alt="social media and ecommerce"></div>
-                      <div class="blog-img"><img src="images/landing/book2.png"  alt="Growing our beta signups with betalist"></div>
-                      <div class="blog-img"><img src="images/landing/book3.png"  alt="Growing our beta signups with betalist"></div>
-
                   </div>
+                </div>
+
               </div>
-          </div>
-          <div id="resources" class="row">
-            <div class="col-md-offset-4 col-md-4 text-center">
-              <a href="/resources.html" class="btn call-to-action2  btn-sm">View all resources</a>
+
+              <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+              </div>
+
+              <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+              </button>
+
+              <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+              </button>
+
+              <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+              </div>
+
             </div>
-          </div>
-      </div>
-  </section>
 
-
-  <section id="contact" class=" foot bg-light">
-    <div class="container">
-        <div class="row ">
-            <div class="col-md-6">
-
-            </div>
         </div>
 
-        <div class="row m-t-lg">
+    </div>
+    <!-- /. Root element of PhotoSwipe. Must have class pswp. -->
 
-            <div class="col-md-4 f-down">
-                <h2><img class="logo" src="images/cocktail.png" alt="cocktail logo"><span class="text-success blue-text">Cocktail Insights</span></h2>
-                <p class="f-titles blue-text ">Follow Us</p>
-                <a href="https://twitter.com/cocktailinsight" target="blank"><i id="twitter" class="social fa fa-twitter-square"></i></a>
-                <a href="https://www.facebook.com/cocktailinsights/" target="blank"><i id="fb" class="social fa fa-facebook-square"></i></a>
-                <a href="https://www.linkedin.com/company/cocktail-insights?trk=top_nav_home" target="blank"><i id="lkin" class="social fa fa-linkedin-square"></i></a>
-            </div>
-            <div class="col-md-4 f-down">
-                <p class="f-titles blue-text">Other links</p>
-                <div class="f-down ">
-                    <strong><a class="f-text" target="blank" href="http://blog.cocktailinsights.com/">Blog</a></strong></div>
+    <!-- ///////////////////\\\\\\\\\\\\\\\\\\\ -->
+    <!-- ********** Resources jQuery ********** -->
+    <!-- \\\\\\\\\\\\\\\\\\\/////////////////// -->
 
-                    <p class="f-titles blue-text">Contact Us</p>
-                    <div class="f-down ">
-                        <strong class="f-text">support@cocktailinsights.com</strong>
-                    </div>
-                </div>
-                <div class="col-md-3 text-left">
-                    <!-- Begin MailChimp Signup Form -->
+    <!-- * Libraries jQuery, Easing and Bootstrap - Be careful to not remove them * -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easings.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
-                    <div id="mc_embed_signup" class="bg">
-                        <form action="//cocktailinsights.us13.list-manage.com/subscribe/post?u=73417957500a00eeeed9ac22e&amp;id=d572aeae8a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                            <div id="mc_embed_signup_scroll" class="form-group">
-                                <label class=" f-titles blue-text control-label sm-top" for="mce-EMAIL">Subscribe to our mailing list</label>
-                                <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
-                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_73417957500a00eeeed9ac22e_d572aeae8a" tabindex="-1" value=""></div>
-                                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn m-top btn-newsletter"></div>
-                            </div>
-                        </form>
-                    </div>
+    <!-- PhotoSwipe Core JS file -->
+    <script src="js/velocity.min.js"></script>
 
-                    <!--End mc_embed_signup-->
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- PhotoSwipe UI JS file -->
+    <script src="js/velocity.ui.min.js"></script>
 
-    <!-- Vendor scripts -->
-    <script src="vendor/jquery/dist/jquery.min.js"></script>
-    <script src="vendor/jquery-ui/jquery-ui.min.js"></script>
-    <script src="vendor/slimScroll/jquery.slimscroll.min.js"></script>
-    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="vendor/metisMenu/dist/metisMenu.min.js"></script>
-    <script src="vendor/iCheck/icheck.min.js"></script>
-    <script src="vendor/sparkline/index.js"></script>
-    <script src="vendor/wnumb-1.0.2/wNumb.js"></script>
-    <script src="vendor/noUiSlider.8.5.1/nouislider.js"></script>
+    <!-- Newsletter plugin -->
+    <script src="js/notifyMe.js"></script>
 
-    <script src="/owlcarousel/owl.carousel.js"></script>
+    <!-- Contact form plugin -->
+    <script src="js/contact-me.js"></script>
 
-    <!-- App scripts -->
-    <script src="scripts/homer.js"></script>
-    <script src="scripts/myjs.js"></script>
+    <!-- Mozaic plugin -->
+    <script src="js/dotty.js"></script>
 
+    <!-- Scroll plugin -->
+    <script src="js/jquery.mousewheel.js"></script>
 
+    <!-- Custom Scrollbar plugin -->
+    <script src="js/jquery.mCustomScrollbar.js"></script>
 
-    <!-- Local script for menu handle -->
-    <!-- It can be also directive -->
-    <script>
-        $(document).ready(function () {
+    <!-- Popup Newsletter Form -->
+    <script src="js/classie.js"></script>
+    <script src="js/dialogFx.js"></script>
 
-        // Page scrolling feature
-        $('a.page-scroll').bind('click', function(event) {
-            var link = $(this);
-            $('html, body').stop().animate({
-                scrollTop: $(link.attr('href')).offset().top - 50
-            }, 500);
-            event.preventDefault();
-        });
+    <!-- PhotoSwipe Core JS file -->
+    <script src="js/photoswipe.js"></script>
 
-        $('body').scrollspy({
-            target: '.navbar-fixed-top',
-            offset: 80
-        });
+    <!-- PhotoSwipe UI JS file -->
+    <script src="js/photoswipe-ui-default.js"></script>
+		<script src="/js/jquery.countdown.js"></script>
 
-    });
-    </script>
-    <!--wow.js-->
-    <script src="scripts/wow.min.js"></script>
-    <script>
-      new WOW().init();
-  </script>
+    <!-- Main JS File -->
+    <script src="js/main.js"></script>
+    <script src="https://use.fontawesome.com/364da859b7.js"></script>
+			<script>
+			$("#getting-started")
+			// Year/Month/Day Hour:Minute:Second
+			.countdown("2016/10/24 15:30:30", function(event) {
+				$(this).text(
+					event.strftime('%D Days %Hh %Mm %Ss')
+				);
+			});
+			</script>
+    <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
 
-  <!--mail-chimp-->
-  <!--<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>-->
+  </body>
 
-
-
-  <!--Start of Tawk.to Script-->
-  <!--<script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-        s1.async=true;
-        s1.src='https://embed.tawk.to/57055a70e550783e6825518d/default';
-        s1.charset='UTF-8';
-        s1.setAttribute('crossorigin','*');
-        s0.parentNode.insertBefore(s1,s0);
-    })();
-</script>-->
-<!--End of Tawk.to Script-->
-
-<!-- User report script -->
-<!-- <script type="text/javascript">
-    var _urq = _urq || [];
-    _urq.push(['initSite', 'b147e2c5-ac1e-457d-8c21-3086b8b53c37']);
-    (function() {
-        var ur = document.createElement('script'); ur.type = 'text/javascript'; ur.async = true;
-        ur.src = ('https:' == document.location.protocol ? 'https://cdn.userreport.com/userreport.js' : 'http://cdn.userreport.com/userreport.js');
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ur, s);
-    })();
-</script>-->
-
-<!-- GA -->
-<!--<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-73940435-3', 'auto');
-  ga('send', 'pageview');
-
-</script>-->
-
-</body>
 </html>
