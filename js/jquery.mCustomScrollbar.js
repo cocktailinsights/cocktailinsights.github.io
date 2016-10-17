@@ -65,7 +65,6 @@ and dependencies (minified).
 	PLUGIN NAMESPACE, PREFIX, DEFAULT SELECTOR(S)
 	----------------------------------------
 	*/
-  console.log('hi');
 
 	var pluginNS="mCustomScrollbar",
 		pluginPfx="mCS",
@@ -419,7 +418,6 @@ and dependencies (minified).
 					},500);
 				}else{
 					removeLiveTimers(liveSelector);
-          console.log('looks like options isn\'t live');
 				}
 
 				/* options backward compatibility (for versions < 3.0.0) and normalization */
