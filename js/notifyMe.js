@@ -18,7 +18,7 @@
                 $(".message").hide().html('').fadeIn();
                 $(".fa-spinner").addClass("fa-spin").removeClass("opacity-0");
                 o.show();
-                console.log("h =" + h)
+
                 e.ajax({
                     type: "POST",
                     url: "https://script.google.com/macros/s/AKfycbztmHT1mIyLhGy4MJw6jGhHYaHi17h1UNdtPuv8rSGzkL8SGPI/exec",
