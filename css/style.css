@@ -181,6 +181,7 @@ table {
   width: 320px;
   margin-bottom: 0px;
   float:left;
+  clear:both;
 }
 
 #loading {
